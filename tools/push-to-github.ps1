@@ -1,46 +1,41 @@
-# 把本地源码提交/推送到 GitHub（在你自己的机器上运行）
+# 推送到 GitHub（最后一步，需要你的凭据）
 #
-# 为什么给你这个脚本：这台机器到 github.com 的链路不稳定
-# （ls-remote 能通，但 fetch 打包下载会在中途断开："early EOF / unpack-objects failed"），
-# 所以推送这一步请在网络正常的机器上做。
+# 现状：本地已经在 origin/main 之上做好了提交，是干净的快进（fast-forward）：
+#     ef33047..6c5fc38  main -> main
 #
-# 用法：
+# 只差认证。两种方式任选：
+#
+#   A. 直接运行本脚本，按提示输入 GitHub 用户名 + Personal Access Token
+#      （Token 权限勾 repo / public_repo；GitHub 已不支持密码推送）
+#
+#   B. 用 Git Credential Manager：先 `git config --global credential.helper manager`
+#      再运行本脚本，会弹浏览器登录
+#
+# 运行：
 #   powershell -NoProfile -ExecutionPolicy Bypass -File .\tools\push-to-github.ps1
-#
-# 首次会要求输入 GitHub 用户名和 Personal Access Token（不要用账号密码）。
-# 需要 token 的权限：repo（public_repo 即可）。
 
 $ErrorActionPreference = 'Stop'
-$root = 'D:\CP16安装及练习文件公开下载版\CP16Plus-Protocol'
-Set-Location $root
-$url = 'https://github.com/hatsunesenya/cp16_plus.git'
+Set-Location 'D:\CP16安装及练习文件公开下载版\CP16Plus-Protocol'
 
-if (-not (Test-Path '.git')) { throw '这里没有 .git，先跑 tools/git-init-commit.ps1' }
-
-$has = git config --get remote.origin.url 2>$null
-if ($has) { git remote set-url origin $url } else { git remote add origin $url }
-
-# 1) 先拿到远端的历史（保留你原有的提交与 tag）
-Write-Host '[1/4] 拉取远端 main …'
-git -c http.postBuffer=52428800 -c http.lowSpeedLimit=1000 -c http.lowSpeedTime=60 fetch origin main
-if ($LASTEXITCODE -ne 0) { throw 'fetch 失败：检查网络/代理' }
-
-# 2) 以远端 main 为基线建分支，再把本地这套源码覆盖上去
-Write-Host '[2/4] 以 origin/main 为基线 …'
-git tag -f local-tree 2>$null | Out-Null
-git checkout -B main origin/main
-git checkout local-tree -- .
-git add -A
-
-# 3) 提交
-Write-Host '[3/4] 提交 …'
-$msgFile = '.git/COMMIT_MSG.txt'
-git commit -q -F $msgFile
-git log --oneline -3
-
-# 4) 推送
-Write-Host '[4/4] 推送（需要输入用户名 + PAT）…'
-git push -u origin main
+Write-Host '== 待推送的提交 ==' -ForegroundColor Cyan
+git log --oneline -2
 
 Write-Host ''
-Write-Host '完成。查看：https://github.com/hatsunesenya/cp16_plus' -ForegroundColor Green
+Write-Host '== 将要上传的内容（顶层）==' -ForegroundColor Cyan
+git ls-tree --name-only HEAD
+
+Write-Host ''
+Write-Host '== 开始推送 ==' -ForegroundColor Cyan
+Write-Host '提示：用户名填 hatsunesenya，密码处粘贴 Personal Access Token（不会显示）'
+git push -u origin main
+
+if ($LASTEXITCODE -eq 0) {
+    Write-Host ''
+    Write-Host '推送成功：https://github.com/hatsunesenya/cp16_plus' -ForegroundColor Green
+} else {
+    Write-Host ''
+    Write-Host '推送失败。常见原因：' -ForegroundColor Yellow
+    Write-Host '  · Token 没有 repo 权限 / 已过期'
+    Write-Host '  · 网络中断：本机到 github.com 不稳，重试几次，或挂代理后再试'
+    Write-Host '  · 远端被别处更新了：先 git fetch origin main，再重做提交'
+}
