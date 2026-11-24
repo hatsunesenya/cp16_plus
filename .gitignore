@@ -1,0 +1,19 @@
+# 构建产物
+rust/target/
+dist/
+tmp/
+*.log
+
+# 本地工具链（体积大，按需自行安装）
+.toolchain/
+toolchain-mingw/
+
+# 运行时文件
+settings.json
+qso.json
+launcher.log
+
+# 测试输出
+tests/report.json
+tests/rust_parity.json
+tests/snr_sweep.json

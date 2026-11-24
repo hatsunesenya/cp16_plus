@@ -1,0 +1,8 @@
+[package]
+name = "cp16plus-setup"
+version.workspace = true
+edition.workspace = true
+
+[[bin]]
+name = "cp16plus-setup"
+path = "src/main.rs"

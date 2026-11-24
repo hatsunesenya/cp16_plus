@@ -1,0 +1,12 @@
+[package]
+name = "cp16plus-audio"
+version = "0.1.0"
+edition = "2021"
+description = "CP16+ 实时采集（cpal 后端，支持选择输入设备）"
+
+[dependencies]
+# 0.15.x 走 windows-sys 0.48（自带预编译导入库），不需要 dlltool 生成
+cpal = "0.15.3"
+
+[features]
+default = []

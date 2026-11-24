@@ -1,0 +1,62 @@
+{
+  "M1": {
+    "n": 16,
+    "df": 25.0,
+    "k": 1,
+    "repeat": 1,
+    "f_lo": 800.0,
+    "t_row": 0.04,
+    "rows_per_char": 17,
+    "row_symbols": 5
+  },
+  "M2": {
+    "n": 16,
+    "df": 25.0,
+    "k": 2,
+    "repeat": 1,
+    "f_lo": 800.0,
+    "t_row": 0.08,
+    "rows_per_char": 17,
+    "row_symbols": 10
+  },
+  "M4": {
+    "n": 16,
+    "df": 25.0,
+    "k": 4,
+    "repeat": 1,
+    "f_lo": 800.0,
+    "t_row": 0.16,
+    "rows_per_char": 17,
+    "row_symbols": 20
+  },
+  "M8": {
+    "n": 16,
+    "df": 25.0,
+    "k": 8,
+    "repeat": 1,
+    "f_lo": 800.0,
+    "t_row": 0.32,
+    "rows_per_char": 17,
+    "row_symbols": 40
+  },
+  "16N-M4": {
+    "n": 16,
+    "df": 18.75,
+    "k": 4,
+    "repeat": 1,
+    "f_lo": 640.0,
+    "t_row": 0.21333333333333335,
+    "rows_per_char": 17,
+    "row_symbols": 20
+  },
+  "24-M4": {
+    "n": 24,
+    "df": 25.0,
+    "k": 4,
+    "repeat": 1,
+    "f_lo": 800.0,
+    "t_row": 0.16,
+    "rows_per_char": 25,
+    "row_symbols": 20
+  }
+}

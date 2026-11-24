@@ -1,0 +1,55 @@
+{
+  "fs": 8000,
+  "proto": 1,
+  "files": {
+    "hdr_bits.u8": {
+      "dtype": "u8",
+      "shape": [
+        165
+      ]
+    },
+    "hdr_coded.u8": {
+      "dtype": "u8",
+      "shape": [
+        342
+      ]
+    },
+    "cc_audio.f32": {
+      "dtype": "f32",
+      "shape": [
+        14016
+      ]
+    },
+    "cc_soft.f32": {
+      "dtype": "f32",
+      "shape": [
+        342
+      ]
+    },
+    "rows.u8": {
+      "dtype": "u8",
+      "shape": [
+        68,
+        16
+      ]
+    },
+    "row_margin.u8": {
+      "dtype": "u8",
+      "shape": [
+        68
+      ]
+    },
+    "vision_audio.f32": {
+      "dtype": "f32",
+      "shape": [
+        43528
+      ]
+    },
+    "pilot_audio.f32": {
+      "dtype": "f32",
+      "shape": [
+        31997
+      ]
+    }
+  }
+}

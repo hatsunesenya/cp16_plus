@@ -1,0 +1,10 @@
+[package]
+name = "cp16plus-core"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+
+[lib]
+name = "cp16plus_core"
+path = "src/lib.rs"

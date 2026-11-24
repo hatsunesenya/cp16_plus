@@ -1,0 +1,15 @@
+{
+  "call": "BG1ABC",
+  "grid": "OM89AB",
+  "length": 42,
+  "msg_type": 0,
+  "sf_id": 0,
+  "utc": 733,
+  "power": 1,
+  "rmap": 0,
+  "raster": 16,
+  "k": 2,
+  "repeat": 1,
+  "font_id": 1,
+  "plan": 0
+}

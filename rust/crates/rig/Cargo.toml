@@ -1,0 +1,8 @@
+[package]
+name = "cp16plus-rig"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+
+[build-dependencies]

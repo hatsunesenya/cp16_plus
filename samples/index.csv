@@ -1,0 +1,29 @@
+﻿file,msg,text,cn,chars,snr_db,mode,cells,acc,hdr,J,anchor,png,truth
+m1_snrm12_M2.wav,1,频谱书写通信试验,中文短句,8,-12.0,M2,2,0.666,False,0.525,cc,png/m1_snrm12_M2.png,m1_snrm12_M2.truth
+m1_snrm9_M2.wav,1,频谱书写通信试验,中文短句,8,-9.0,M2,6,0.693,False,0.658,cc,png/m1_snrm9_M2.png,m1_snrm9_M2.truth
+m1_snrm6_M2.wav,1,频谱书写通信试验,中文短句,8,-6.0,M2,8,0.854,False,0.685,cc,png/m1_snrm6_M2.png,m1_snrm6_M2.truth
+m1_snrm3_M2.wav,1,频谱书写通信试验,中文短句,8,-3.0,M2,8,0.897,True,0.706,cc,png/m1_snrm3_M2.png,m1_snrm3_M2.truth
+m1_snrp0_M2.wav,1,频谱书写通信试验,中文短句,8,0.0,M2,8,0.97,True,0.704,cc,png/m1_snrp0_M2.png,m1_snrp0_M2.truth
+m1_snrp3_M2.wav,1,频谱书写通信试验,中文短句,8,3.0,M2,8,0.997,True,0.707,cc,png/m1_snrp3_M2.png,m1_snrp3_M2.truth
+m1_snrp6_M2.wav,1,频谱书写通信试验,中文短句,8,6.0,M2,8,1.0,True,0.699,cc,png/m1_snrp6_M2.png,m1_snrp6_M2.truth
+m2_snrm12_M2.wav,2,ＢＧ１ＡＢＣ　５９９,呼号与报告,10,-12.0,M2,2,0.844,False,0.542,cc,png/m2_snrm12_M2.png,m2_snrm12_M2.truth
+m2_snrm9_M2.wav,2,ＢＧ１ＡＢＣ　５９９,呼号与报告,10,-9.0,M2,10,0.962,False,0.599,cc,png/m2_snrm9_M2.png,m2_snrm9_M2.truth
+m2_snrm6_M2.wav,2,ＢＧ１ＡＢＣ　５９９,呼号与报告,10,-6.0,M2,10,0.98,True,0.612,cc,png/m2_snrm6_M2.png,m2_snrm6_M2.truth
+m2_snrm3_M2.wav,2,ＢＧ１ＡＢＣ　５９９,呼号与报告,10,-3.0,M2,10,0.993,True,0.581,cc,png/m2_snrm3_M2.png,m2_snrm3_M2.truth
+m2_snrp0_M2.wav,2,ＢＧ１ＡＢＣ　５９９,呼号与报告,10,0.0,M2,10,0.997,True,0.603,cc,png/m2_snrp0_M2.png,m2_snrp0_M2.truth
+m2_snrp3_M2.wav,2,ＢＧ１ＡＢＣ　５９９,呼号与报告,10,3.0,M2,10,0.994,True,0.58,cc,png/m2_snrp3_M2.png,m2_snrp3_M2.truth
+m2_snrp6_M2.wav,2,ＢＧ１ＡＢＣ　５９９,呼号与报告,10,6.0,M2,10,0.994,True,0.612,cc,png/m2_snrp6_M2.png,m2_snrp6_M2.truth
+m3_snrm12_M2.wav,3,应急联络　二公里正东,应急报文,10,-12.0,M2,5,0.774,False,0.59,cc,png/m3_snrm12_M2.png,m3_snrm12_M2.truth
+m3_snrm9_M2.wav,3,应急联络　二公里正东,应急报文,10,-9.0,M2,10,0.856,False,0.651,cc,png/m3_snrm9_M2.png,m3_snrm9_M2.truth
+m3_snrm6_M2.wav,3,应急联络　二公里正东,应急报文,10,-6.0,M2,10,0.909,False,0.688,cc,png/m3_snrm6_M2.png,m3_snrm6_M2.truth
+m3_snrm3_M2.wav,3,应急联络　二公里正东,应急报文,10,-3.0,M2,10,0.957,True,0.688,cc,png/m3_snrm3_M2.png,m3_snrm3_M2.truth
+m3_snrp0_M2.wav,3,应急联络　二公里正东,应急报文,10,0.0,M2,10,0.982,True,0.687,cc,png/m3_snrp0_M2.png,m3_snrp0_M2.truth
+m3_snrp3_M2.wav,3,应急联络　二公里正东,应急报文,10,3.0,M2,10,0.998,True,0.693,cc,png/m3_snrp3_M2.png,m3_snrp3_M2.truth
+m3_snrp6_M2.wav,3,应急联络　二公里正东,应急报文,10,6.0,M2,10,0.996,True,0.687,cc,png/m3_snrp6_M2.png,m3_snrp6_M2.truth
+m4_snrm12_M2.wav,4,频率测试　七三　结束,通联收尾,10,-12.0,M2,1,0.676,False,0.566,blind,png/m4_snrm12_M2.png,m4_snrm12_M2.truth
+m4_snrm9_M2.wav,4,频率测试　七三　结束,通联收尾,10,-9.0,M2,9,0.858,False,0.659,cc,png/m4_snrm9_M2.png,m4_snrm9_M2.truth
+m4_snrm6_M2.wav,4,频率测试　七三　结束,通联收尾,10,-6.0,M2,10,0.895,False,0.693,cc,png/m4_snrm6_M2.png,m4_snrm6_M2.truth
+m4_snrm3_M2.wav,4,频率测试　七三　结束,通联收尾,10,-3.0,M2,10,0.932,True,0.697,cc,png/m4_snrm3_M2.png,m4_snrm3_M2.truth
+m4_snrp0_M2.wav,4,频率测试　七三　结束,通联收尾,10,0.0,M2,10,0.983,True,0.7,cc,png/m4_snrp0_M2.png,m4_snrp0_M2.truth
+m4_snrp3_M2.wav,4,频率测试　七三　结束,通联收尾,10,3.0,M2,10,0.99,True,0.697,cc,png/m4_snrp3_M2.png,m4_snrp3_M2.truth
+m4_snrp6_M2.wav,4,频率测试　七三　结束,通联收尾,10,6.0,M2,10,0.994,True,0.694,cc,png/m4_snrp6_M2.png,m4_snrp6_M2.truth

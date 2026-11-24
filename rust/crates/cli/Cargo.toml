@@ -1,0 +1,26 @@
+[package]
+name = "cp16plus-cli"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+cp16plus-core = { path = "../core" }
+cp16plus-rig = { path = "../rig" }
+cp16plus-audio = { path = "../audio", optional = true }
+
+[features]
+# 默认构建零第三方依赖；带 audio 才把采集编进来（发行物仍是一个目录、两个 exe）
+audio = ["dep:cp16plus-audio"]
+
+[lib]
+name = "cp16plus_cli"
+path = "src/lib.rs"
+
+[[bin]]
+name = "cp16plus"
+path = "src/main.rs"
+
+# 双击启动器：无控制台，起引擎 + 开应用窗口
+[[bin]]
+name = "cp16plus-app"
+path = "src/bin/app.rs"

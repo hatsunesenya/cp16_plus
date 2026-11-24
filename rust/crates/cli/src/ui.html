@@ -1,0 +1,2306 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
+<title>CP16+ 频谱书写</title>
+<style>
+/* ============================================================
+   版式（2026-11 重排）
+   · 顶栏：设置 / 通联日志 / DEBUG 日志 + 状态 + 保存瀑布图
+   · 左栏（主）：收信 —— 实时瀑布 + 判读窗，不放参数细节
+   · 右栏：发信 —— 报文、点阵预览、默认消息一键发、发射时序状态
+   · 生成 WAV / 自带自检 / 同步帧开关只在"调试模式"出现
+   · 没有外部字体/图标/CDN：内嵌一页，断网可用
+   ============================================================ */
+:root{
+  --bg:#eef1f5; --surface:#fff; --surface-2:#f4f6fa;
+  --ink:#0d1520; --ink-2:#3d4a5c; --ink-3:#6b7889;
+  --line:#dde3ec; --line-2:#eaeef4;
+  --accent:#0e7c86; --accent-2:#0a5f68; --accent-soft:#e3f4f5;
+  --amber:#b45309; --amber-soft:#fdf2e0;
+  --red:#b42318; --red-soft:#fdecea; --green:#0f7b4f;
+  --wf-bg:#070b12;
+  --shadow:0 1px 2px rgba(15,32,54,.05),0 8px 24px -12px rgba(15,32,54,.18);
+  --shadow-lg:0 2px 6px rgba(15,32,54,.06),0 24px 60px -28px rgba(15,32,54,.35);
+  --r:14px;
+  --mono:"Cascadia Mono","Cascadia Code",Consolas,ui-monospace,monospace;
+  --sans:"Segoe UI Variable Display","Segoe UI",system-ui,-apple-system,"Microsoft YaHei UI","Microsoft YaHei",sans-serif;
+}
+html[data-theme="dark"]{
+  --bg:#0a0f16; --surface:#111a25; --surface-2:#0e1620;
+  --ink:#e9eef6; --ink-2:#aab8cb; --ink-3:#7f8ea3;
+  --line:#1d2938; --line-2:#162231;
+  --accent:#39c8d0; --accent-2:#7ee2e8; --accent-soft:#0f2b30;
+  --amber:#f0b072; --amber-soft:#2a2013;
+  --red:#f1998f; --red-soft:#2a1614; --green:#5ad19a;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 10px 30px -14px rgba(0,0,0,.7);
+  --shadow-lg:0 2px 8px rgba(0,0,0,.5),0 30px 70px -30px rgba(0,0,0,.9);
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;display:flex;flex-direction:column;height:100vh;overflow:hidden;
+  background:
+    radial-gradient(1100px 520px at 82% -12%,rgba(14,124,134,.10),transparent 60%),
+    radial-gradient(720px 420px at -8% 108%,rgba(180,83,9,.07),transparent 60%),
+    var(--bg);
+  color:var(--ink);font:14px/1.5 var(--sans);-webkit-font-smoothing:antialiased;
+}
+button,input,select,textarea{font:inherit;color:inherit}
+::selection{background:var(--accent);color:#fff}
+.mono{font-family:var(--mono);font-variant-numeric:tabular-nums}
+.muted{color:var(--ink-3);font-size:12px}
+.grow{flex:1}
+
+/* ---------------- 顶栏 ---------------- */
+.topbar{
+  height:56px;flex:none;display:flex;align-items:center;gap:10px;padding:0 16px;
+  border-bottom:1px solid var(--line);
+  background:color-mix(in srgb,var(--surface) 82%,transparent);backdrop-filter:blur(12px);
+}
+.brand{display:flex;align-items:center;gap:9px;font-weight:650;font-size:14.5px;letter-spacing:.01em}
+.brand .mark{width:26px;height:26px;border-radius:8px;position:relative;overflow:hidden;flex:none;
+  background:linear-gradient(145deg,#0f8b95,#0a5f68);box-shadow:0 4px 10px -6px rgba(10,95,104,.9)}
+.brand .mark span{position:absolute;bottom:6px;width:2px;border-radius:2px;background:#bff6f8}
+.pages{display:flex;gap:4px;margin-left:14px}
+.pages button{
+  border:1px solid transparent;background:transparent;height:30px;padding:0 12px;border-radius:9px;
+  font-size:13px;color:var(--ink-2);cursor:pointer;transition:.14s;
+}
+.pages button:hover{background:var(--surface-2);border-color:var(--line)}
+.pages button.on{background:var(--accent-soft);color:var(--accent-2);border-color:transparent;font-weight:600}
+html[data-theme="dark"] .pages button.on{color:var(--accent)}
+.vsep{width:1px;height:20px;background:var(--line);margin:0 2px}
+.btn.ghost{background:transparent;border-color:transparent;color:var(--ink-2)}
+.btn.ghost:hover{background:var(--surface-2);border-color:var(--line)}
+
+.pages-host{flex:1;min-height:0;position:relative}
+.page{position:absolute;inset:0;display:none}
+.page.on{display:block}
+.page#page-main.on{display:block}
+.split{height:100%}
+
+/* 原始瀑布图 */
+.card.raw{height:100%;margin:14px;min-height:0}
+.raw-stage{flex:1;min-height:0;position:relative;margin:11px;border-radius:11px;overflow:hidden;
+  background:#070b12;border:1px solid #0d1420}
+#rawCanvas{position:absolute;inset:0;width:100%;height:100%;display:block;cursor:crosshair}
+.raw-top{flex-wrap:wrap;gap:10px;align-items:center}
+.raw-top .slider{white-space:nowrap;display:inline-flex;align-items:center;gap:6px}
+.sel{height:28px;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);
+     font-size:12px;padding:0 8px}
+.num{width:64px;height:26px;border:1px solid var(--line);border-radius:7px;background:#fff;
+     color:var(--ink);font:11.5px/1 var(--mono);padding:0 6px;text-align:right}
+.raw-meter{display:flex;align-items:center;gap:10px;padding:6px 14px;border-bottom:1px solid var(--line);
+           font-size:11.5px}
+.meter{position:relative;flex:none;width:220px;height:9px;border-radius:999px;background:#e7edf0;overflow:hidden}
+.meter i{position:absolute;left:0;top:0;bottom:0;width:0;background:linear-gradient(90deg,#2bb6c6,#7aeedc);transition:width .08s linear}
+.meter b{position:absolute;top:-2px;bottom:-2px;width:2px;background:#e0554d;left:0;transition:left .08s linear}
+.card.raw .overlay{position:absolute;inset:0;display:grid;place-items:center;pointer-events:none}
+.card.raw .overlay div{color:#8fa0b8;font-size:12.5px;background:rgba(7,11,18,.72);
+  border:1px dashed rgba(143,160,184,.35);border-radius:12px;padding:14px 20px}
+.card.raw .overlay.hide{opacity:0}
+
+/* 电台页 */
+.card.rig{height:100%;margin:14px;min-height:0}
+.rig-body{display:grid;grid-template-columns:1fr 1fr;gap:24px;padding:18px;overflow:auto}
+.rig-col .field > span{font-size:11.5px;color:var(--ink-3);font-weight:600}
+.chip{display:inline-flex;align-items:center;gap:7px;height:30px;padding:0 12px;border-radius:999px;
+  background:var(--surface-2);border:1px solid var(--line);font-size:12px;color:var(--ink-2);white-space:nowrap}
+.freq{display:inline-flex;align-items:center;gap:7px;height:30px;padding:0 10px;border-radius:999px;
+  background:var(--surface-2);border:1px solid var(--line);font-size:12px;color:var(--ink-3);white-space:nowrap}
+.freq input{width:84px;height:24px;border:1px solid var(--line);border-radius:7px;background:var(--surface);
+  font:12.5px var(--mono);font-variant-numeric:tabular-nums;text-align:right;padding:0 6px}
+.freq input:focus{border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-soft);outline:none}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--ink-3);flex:none}
+.dot.live{background:#12b76a;animation:pulse 1.8s infinite}
+.dot.tx{background:#e5484d;animation:pulse 1.1s infinite}
+.dot.wait{background:#e8a33d}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(18,183,106,.5)}70%{box-shadow:0 0 0 7px rgba(18,183,106,0)}100%{box-shadow:0 0 0 0 rgba(18,183,106,0)}}
+
+/* ---------------- 通用控件 ---------------- */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:7px;height:34px;padding:0 13px;
+  border-radius:10px;border:1px solid var(--line);background:var(--surface);color:var(--ink);
+  font-size:13px;font-weight:560;cursor:pointer;transition:.14s;white-space:nowrap;
+}
+.btn:hover{border-color:#c3cddc;background:var(--surface-2)}
+.btn:active{transform:translateY(.5px)}
+.btn.primary{background:linear-gradient(180deg,#12909a,#0c7680);border-color:#0b6d76;color:#fff;
+  box-shadow:0 1px 2px rgba(10,95,104,.5),0 8px 18px -12px rgba(10,95,104,.9)}
+.btn.primary:hover{filter:brightness(1.06)}
+.btn.stop{background:linear-gradient(180deg,#d2685e,#bf5147);border-color:#a8463c;color:#fff}
+.btn.sm{height:28px;padding:0 10px;font-size:12px;border-radius:8px}
+.btn.big{height:46px;font-size:15px;border-radius:12px;width:100%}
+.btn:disabled{opacity:.45;cursor:not-allowed}
+select,input[type=text],input[type=number],textarea{
+  background:var(--surface);border:1px solid var(--line);border-radius:9px;padding:0 10px;height:33px;
+  outline:none;transition:.14s;width:100%;min-width:0;
+}
+textarea{padding:9px 11px;height:auto;resize:vertical;line-height:1.6}
+select:hover,input:hover,textarea:hover{border-color:#c3cddc}
+select:focus,input:focus,textarea:focus{border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-soft)}
+label.chk{display:inline-flex;align-items:center;gap:7px;font-size:12.5px;color:var(--ink-2);cursor:pointer;user-select:none}
+input[type=checkbox]{appearance:none;width:15px;height:15px;border:1.5px solid #b9c4d4;border-radius:5px;
+  background:var(--surface);cursor:pointer;position:relative;flex:none;transition:.14s}
+input[type=checkbox]:checked{background:var(--accent);border-color:var(--accent)}
+input[type=checkbox]:checked::after{content:"";position:absolute;left:4px;top:1px;width:4px;height:8px;
+  border:solid #fff;border-width:0 2px 2px 0;transform:rotate(42deg)}
+input[type=range]{-webkit-appearance:none;height:4px;border-radius:99px;background:var(--line);outline:none}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:13px;height:13px;border-radius:50%;
+  background:#fff;border:2px solid var(--accent);box-shadow:0 1px 3px rgba(0,0,0,.25);cursor:pointer}
+.seg{display:inline-flex;background:var(--surface-2);border:1px solid var(--line);border-radius:9px;padding:2px;gap:2px}
+.seg button{border:0;background:transparent;border-radius:7px;height:24px;padding:0 9px;font-size:11.5px;
+  color:var(--ink-2);cursor:pointer;transition:.12s;font-family:var(--mono)}
+.seg button.on{background:var(--surface);color:var(--ink);box-shadow:var(--shadow);font-weight:650}
+
+/* ---------------- 主分割 ---------------- */
+.split{flex:1;min-height:0;display:grid;grid-template-columns:minmax(0,1fr) 372px;gap:14px;padding:14px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--shadow);
+  display:flex;flex-direction:column;min-height:0;min-width:0}
+.rx{padding:0;overflow:hidden}
+.rx-top{display:flex;align-items:center;gap:10px;padding:10px 13px;border-bottom:1px solid var(--line-2);
+  background:linear-gradient(180deg,var(--surface),var(--surface-2));flex-wrap:wrap}
+.rx-top .slider{display:flex;align-items:center;gap:6px;font-size:11.5px;color:var(--ink-3)}
+.rx-top .slider input{width:88px}
+.stage{flex:1;min-height:0;display:grid;grid-template-columns:46px auto minmax(0,1fr);grid-template-rows:minmax(0,1fr);
+  background:var(--wf-bg);margin:11px;border-radius:11px;overflow:hidden;position:relative;
+  border:1px solid #0d1420;box-shadow:inset 0 1px 0 rgba(255,255,255,.04)}
+.axis-y{grid-column:1;position:relative;border-right:1px solid rgba(255,255,255,.07);
+  background:linear-gradient(90deg,#080d15,#0a1017)}
+.axis-y i{position:absolute;right:5px;transform:translateY(-50%);font:9.5px/1 var(--mono);
+  color:#63718a;font-style:normal}
+.axis-y i::after{content:"";position:absolute;right:-6px;top:50%;width:4px;height:1px;background:rgba(255,255,255,.16)}
+.wf-wrap{grid-column:2;position:relative;width:144px;border-right:1px solid rgba(255,255,255,.07)}
+#wf{position:absolute;inset:0;width:100%;height:100%;display:block}
+.glyphwin{grid-column:3;display:flex;flex-direction:column;min-width:0;min-height:0;padding:9px 12px 8px;gap:6px;
+  background:linear-gradient(180deg,#080e16,#060a11)}
+.gw-head{display:flex;align-items:baseline;gap:8px;font-size:10.5px;letter-spacing:.08em;
+  text-transform:uppercase;color:#5f6e86}
+.gw-head .hint{font-size:10px;letter-spacing:0;text-transform:none;color:#4b5769}
+.glyphwin canvas{flex:1;min-height:0;width:100%;display:block}
+.overlay{position:absolute;inset:0;display:grid;place-items:center;pointer-events:none;transition:.25s;z-index:2}
+.overlay.hide{opacity:0}
+.overlay div{text-align:center;color:#8fa0b8;font-size:13px;line-height:1.8;background:rgba(7,11,18,.72);
+  border:1px dashed rgba(143,160,184,.35);border-radius:12px;padding:16px 24px}
+.overlay b{color:#d5e4f5;font-weight:600}
+.rx-foot{flex:none;display:flex;align-items:center;gap:10px;padding:8px 13px;border-top:1px solid var(--line-2);
+  background:var(--surface-2);font-size:11.5px;color:var(--ink-3)}
+
+/* ---------------- 发信栏 ---------------- */
+.tx{padding:13px;gap:11px;overflow:auto}
+.tx-head{display:flex;align-items:baseline;gap:8px;font-size:12px;font-weight:650;letter-spacing:.06em;
+  text-transform:uppercase;color:var(--ink-3)}
+.tx-head .who{margin-left:auto;font-family:var(--mono);font-size:11.5px;letter-spacing:0;text-transform:none;
+  color:var(--ink-2)}
+.glyphs{display:flex;flex-wrap:wrap;gap:5px;min-height:34px}
+.glyphs canvas{width:30px;height:30px;border-radius:6px;background:#08101a;border:1px solid var(--line);
+  image-rendering:pixelated}
+.glyphs .miss{width:30px;height:30px;border-radius:6px;display:grid;place-items:center;background:var(--red-soft);
+  color:var(--red);font-size:11px}
+.msgs{display:flex;flex-wrap:wrap;gap:6px;min-height:30px}
+.msgs button{
+  height:30px;padding:0 11px;border-radius:9px;border:1px solid var(--line);background:var(--surface-2);
+  font-size:12.5px;color:var(--ink);cursor:pointer;transition:.14s;max-width:100%;overflow:hidden;
+  text-overflow:ellipsis;white-space:nowrap;
+}
+.msgs button:hover{border-color:var(--accent);color:var(--accent-2);background:var(--accent-soft)}
+html[data-theme="dark"] .msgs button:hover{color:var(--accent)}
+.tx-state{font-size:12px;color:var(--ink-3);min-height:34px;line-height:1.5}
+.tx-state b{color:var(--ink);font-weight:600;font-family:var(--mono)}
+.tx-debug{display:none;flex-direction:column;gap:9px;padding-top:10px;border-top:1px dashed var(--line)}
+.tx-debug.on{display:flex}
+.row{display:flex;gap:8px}
+.row > *{flex:1}
+
+/* ---------------- 对话框 ---------------- */
+dialog{
+  border:1px solid var(--line);border-radius:16px;padding:0;background:var(--surface);color:var(--ink);
+  box-shadow:var(--shadow-lg);width:min(760px,94vw);max-height:88vh;
+}
+dialog::backdrop{background:rgba(8,14,22,.45);backdrop-filter:blur(2px)}
+.dlg-h{display:flex;align-items:center;gap:10px;padding:14px 18px;border-bottom:1px solid var(--line-2)}
+.dlg-h h2{margin:0;font-size:15px;font-weight:650}
+.dlg-h .x{margin-left:auto}
+.dlg-b{padding:14px 16px;overflow:auto;max-height:calc(88vh - 120px)}
+.dlg-f{display:flex;gap:9px;justify-content:flex-end;padding:13px 18px;border-top:1px solid var(--line-2);
+  background:var(--surface-2)}
+fieldset{border:1px solid var(--line-2);border-radius:12px;padding:10px 12px;margin:0 0 10px}
+legend{font-size:11.5px;font-weight:650;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-3);padding:0 6px}
+.field{display:flex;flex-direction:column;gap:5px;margin-bottom:8px}
+.field > span{font-size:11.5px;color:var(--ink-3);font-weight:600}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:8px 14px}
+#msgList{max-height:148px;overflow:auto;padding-right:2px}
+.msg-edit{display:grid;grid-template-columns:96px 1fr 28px;gap:8px;margin-bottom:6px;align-items:center}
+.msg-edit .del{border:1px solid var(--line);background:var(--surface);border-radius:8px;height:33px;cursor:pointer;color:var(--ink-3)}
+.msg-edit .del:hover{color:var(--red);border-color:var(--red)}
+table.qso{width:100%;border-collapse:collapse;font-size:12.5px}
+table.qso th{text-align:left;font-size:11px;color:var(--ink-3);font-weight:600;padding:6px 6px;border-bottom:1px solid var(--line)}
+table.qso td{padding:3px 5px;border-bottom:1px solid var(--line-2)}
+table.qso input{height:29px;font-size:12.5px;font-family:var(--mono)}
+table.qso .del{width:26px;height:26px;border-radius:7px;border:1px solid var(--line);background:var(--surface);
+  cursor:pointer;color:var(--ink-3);line-height:1}
+table.qso .del:hover{color:var(--red);border-color:var(--red)}
+#debugLog{font:11.5px/1.65 var(--mono);color:var(--ink-2);white-space:pre-wrap;word-break:break-all;
+  background:var(--surface-2);border:1px solid var(--line-2);border-radius:10px;padding:10px;
+  max-height:52vh;overflow:auto;margin:0}
+
+/* ---------------- toast ---------------- */
+#toasts{position:fixed;right:16px;bottom:16px;display:flex;flex-direction:column;gap:8px;z-index:80}
+.toast{background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--accent);
+  border-radius:10px;padding:9px 13px;font-size:12.5px;box-shadow:var(--shadow-lg);max-width:420px;
+  animation:slidein .2s ease;word-break:break-all}
+.toast.err{border-left-color:var(--red)}
+.toast.warn{border-left-color:var(--amber)}
+@keyframes slidein{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.dragmask{position:fixed;inset:0;z-index:60;display:none;place-items:center;
+  background:color-mix(in srgb,var(--accent) 12%,transparent);backdrop-filter:blur(2px)}
+.dragmask.on{display:grid}
+.dragmask div{border:2px dashed var(--accent);border-radius:16px;padding:30px 44px;background:var(--surface);
+  font-size:14px;color:var(--accent-2)}
+.topbar .ver{font-size:11px;color:var(--muted);margin-left:8px;letter-spacing:.02em;align-self:flex-end;padding-bottom:2px}
+
+/* 右栏两栏 + 机读层卡片 */
+.col-r{display:flex;flex-direction:column;gap:14px;min-height:0}
+.col-r>.card.tx{flex:1 1 auto;min-height:0}
+.card.link{flex:0 0 auto;padding:14px 16px}
+.link-head{display:flex;align-items:center;gap:8px;font-size:13px}
+.link-head .dot{width:8px;height:8px;border-radius:50%;background:#c8d2d8;flex:none}
+.link-head .dot.ok{background:#22b07d;box-shadow:0 0 0 3px rgba(34,176,125,.15)}
+.link-head .dot.warn{background:#e0a63d;box-shadow:0 0 0 3px rgba(224,166,61,.15)}
+.link-head .dot.bad{background:#e0554d;box-shadow:0 0 0 3px rgba(224,85,77,.12)}
+.link-grid{display:grid;grid-template-columns:1fr 1fr;gap:6px 16px;margin:10px 0 12px;font-size:12px}
+.link-grid>div{display:flex;justify-content:space-between;gap:8px;border-bottom:1px dashed var(--line);padding-bottom:3px}
+.link-grid span{color:var(--muted)}
+.link-grid b{font-family:var(--mono);font-weight:600;color:var(--ink)}
+.card.link .btn{width:100%}
+/* 通联记录表单 */
+dialog#dlgLog{width:640px}
+.log-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px 16px;margin-top:6px}
+.log-grid label{display:flex;flex-direction:column;gap:4px;font-size:12px;color:var(--muted)}
+.log-grid input,.log-grid select{height:30px;border:1px solid var(--line);border-radius:8px;background:#fff;
+  color:var(--ink);font:12.5px/1 var(--sans);padding:0 9px}
+.log-grid input:focus,.log-grid select:focus{outline:2px solid rgba(18,138,150,.35);border-color:#128a96}
+
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">
+    <span class="mark">
+      <span style="left:5px;height:7px"></span><span style="left:10px;height:12px"></span>
+      <span style="left:15px;height:16px"></span><span style="left:20px;height:9px"></span>
+    </span>
+    CP16+ 频谱书写
+    <span class="ver">β0.1.5 · 协议 V1</span>
+  </div>
+  <nav class="pages" id="pageTabs">
+    <button data-page="main" class="on">主界面</button>
+    <button id="btnRawWin" title="另外开一个窗口，看整段音频的原始电平">原始瀑布图</button>
+    <button data-page="rig">电台</button>
+  </nav>
+  <div class="grow"></div>
+  <label class="freq" title="工作频率（只用于通联日志的 ADIF 内容，不参与调制解调）">
+    <span>频率</span>
+    <input id="freqIn" type="number" min="1" max="30000000" step="1" inputmode="decimal">
+    <span>kHz</span>
+  </label>
+  <div class="chip"><span class="dot" id="dot"></span><span id="stateText">空闲</span></div>
+  <button class="btn primary" id="snapBtn">保存瀑布图</button>
+  <span class="vsep"></span>
+  <button class="btn sm ghost" data-dlg="settings">设置</button>
+  <button class="btn sm ghost" data-dlg="qso">通联日志</button>
+  <button class="btn sm ghost" data-dlg="debug">DEBUG</button>
+</header>
+
+<main class="pages-host">
+  <div class="page on" id="page-main">
+  <div class="split">
+  <!-- ================= 收信 ================= -->
+  <section class="card rx">
+    <div class="rx-top">
+      <button class="btn primary" id="liveBtn">开始接收</button>
+      <span style="width:1px;height:20px;background:var(--line)"></span>
+      <label class="slider">行高 <input type="range" id="zoomR" min="4" max="18" value="9"></label>
+      <label class="slider">亮度 <input type="range" id="gainR" min="0" max="40" value="14"></label>
+      <div class="seg" id="lutSeg">
+        <button data-lut="inferno" class="on">Inferno</button>
+        <button data-lut="teal">青</button>
+        <button data-lut="amber">琥珀</button>
+        <button data-lut="gray">灰</button>
+      </div>
+      <div class="grow"></div>
+      <span class="muted mono" id="devLabel">—</span>
+    </div>
+    <div class="stage">
+      <div class="axis-y" id="axisY"></div>
+      <div class="wf-wrap" id="wfwrap"><canvas id="wf"></canvas></div>
+      <aside class="glyphwin archive">
+        <div class="gw-head"><span>存档区</span><span class="hint" id="arHint">最近 3 × 10 秒</span></div>
+        <canvas id="ar"></canvas>
+      </aside>
+      <div class="overlay" id="empty">
+        <div>点 <b>开始接收</b> 听声卡　·　或把 <b>WAV</b> 拖进窗口回放<br>
+          <span style="font-size:11.5px">逐行相关、逐行上屏</span></div>
+      </div>
+    </div>
+    <div class="rx-foot">
+      <span id="footState">空闲</span>
+      <span class="grow"></span>
+      <span class="mono" id="footTime">t = 0.0 s</span>
+    </div>
+  </section>
+
+  <!-- ================= 发信 ================= -->
+  <div class="col-r">
+  <section class="card tx">
+    <div class="tx-head">发信 <span class="who" id="txStation">—</span></div>
+    <textarea id="txText" rows="3" placeholder="要发送的报文">CQ CQ CQ DE</textarea>
+    <div class="glyphs" id="txGlyphs"></div>
+    <div class="msgs" id="txMsgs"></div>
+    <div class="seg" id="modeSeg"></div>
+    <button class="btn primary big" id="btnTx">发射</button>
+    <div class="tx-state" id="txState">—</div>
+    <div class="tx-debug" id="txDebug">
+      <label class="chk"><input type="checkbox" id="txSync" checked> 叠加同步帧</label>
+      <div class="row">
+        <button class="btn" id="btnMake">生成 WAV</button>
+        <button class="btn" id="btnSelf">发→收自检</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 机读层：解没解出来、同步没同步、差多少时间；以及这一条通联的落库入口 -->
+  <section class="card link">
+    <div class="link-head">
+      <b>机读层</b>
+      <span class="dot" id="linkDot"></span>
+      <span class="muted" id="linkState">未收到</span>
+      <span class="grow"></span>
+      <span class="muted">时差 <b class="mono" id="linkOffset">—</b></span>
+    </div>
+    <div class="link-grid">
+      <div><span>对方</span><b id="linkPeer">—</b></div>
+      <div><span>网格</span><b id="linkGrid">—</b></div>
+      <div><span>类型</span><b id="linkType">—</b></div>
+      <div><span>字数</span><b id="linkLen">—</b></div>
+      <div><span>档位</span><b id="linkMode">—</b></div>
+      <div><span>报文头</span><b id="linkAge">—</b></div>
+    </div>
+    <button class="btn" id="btnLog">保存通联日志…</button>
+  </section>
+  </div>
+  </div>
+  </div>
+
+  <!-- ================= 原始瀑布图（独立窗口） =================
+       这里不做字形切分、不做音调对齐：横轴时间、纵轴频率（f_lo 在底）、
+       颜色就是每个频点的原始电平。范围可调，方便看整段通带或贴近看 16 个音。 -->
+  <div class="page" id="page-raw">
+    <section class="card raw">
+      <div class="rx-top raw-top">
+        <b>原始瀑布图</b>
+        <span class="muted mono" id="rawDev">—</span>
+        <div class="grow"></div>
+        <label class="slider">中心频率
+          <input type="range" id="rawCenter" min="100" max="3900" step="10" value="1000">
+          <span class="mono" id="rawCenterTxt">1000 Hz</span>
+        </label>
+        <label class="slider">带宽
+          <input type="range" id="rawSpan" min="100" max="4000" step="50" value="1600">
+          <span class="mono" id="rawSpanTxt">1600 Hz</span>
+        </label>
+        <label class="slider">行率
+          <select id="rawFps" class="sel">
+            <option value="50">50 帧/秒</option>
+            <option value="100" selected>100 帧/秒</option>
+            <option value="200">200 帧/秒</option>
+            <option value="400">400 帧/秒</option>
+          </select>
+        </label>
+        <label class="slider">对比度 <input type="range" id="rawGain" min="0" max="60" value="24"></label>
+        <button class="btn sm" id="rawClear">清屏</button>
+        <button class="btn sm" id="rawSnap">存图</button>
+      </div>
+
+      <div class="raw-meter">
+        <span class="muted">电平</span>
+        <div class="meter"><i id="rawRms"></i><b id="rawPeak"></b></div>
+        <span class="mono" id="rawLvlTxt">—</span>
+        <span class="grow"></span>
+        <span class="mono muted" id="rawInfo">0 帧</span>
+      </div>
+
+      <div class="raw-stage">
+        <canvas id="rawCanvas"></canvas>
+        <div class="overlay" id="rawEmpty">
+          <div>
+            <b>还没有数据</b><br>
+            回到主窗口点「开始接收」，或把 WAV 拖进主窗口回放；<br>
+            这里就会显示整段音频的原始电平。
+          </div>
+        </div>
+      </div>
+
+      <div class="rx-foot">
+        <span class="mono muted" id="rawReadout">鼠标移到图上可读频率 / 电平 / 时间</span>
+        <span class="grow"></span>
+        <span class="muted">频率横轴、时间自上而下流；一格像素＝一帧，不做压缩</span>
+      </div>
+    </section>
+  </div>
+
+  <!-- ================= 电台（未接线） ================= -->
+  <div class="page" id="page-rig">
+    <section class="card rig">
+      <div class="rx-top"><b>电台控制（CAT / Hamlib）</b><span class="muted">选型号与串口后勾「启用 CAT」，发射时自动 PTT</span></div>
+      <div class="rig-body">
+        <div class="rig-col">
+          <div class="field"><span>电台型号（Hamlib）</span><select id="rigModel"><option value="">（读取中…）</option></select></div>
+          <div class="field"><span>CAT 串口</span><select id="rigPort"><option value="">（读取中…）</option></select></div>
+          <div class="field"><span>波特率</span>
+            <select id="rigBaud">
+              <option>4800</option><option>9600</option><option>19200</option>
+              <option>38400</option><option>57600</option><option>115200</option>
+            </select></div>
+          <div class="field"><span>PTT 提前 / 松开延时（毫秒）</span>
+            <div class="row">
+              <input id="rigLead" type="number" min="0" max="2000" step="10">
+              <input id="rigTail" type="number" min="0" max="2000" step="10">
+            </div></div>
+          <label class="chk"><input type="checkbox" id="rigEnabled"> 启用 CAT（发射时自动 PTT）</label>
+        </div>
+        <div class="rig-col">
+          <div class="field"><span>电台频率（Hz）</span>
+            <input id="rigFreq" type="text" readonly value="—"></div>
+          <div class="row">
+            <button class="btn" id="rigTest">测试 CAT 连接</button>
+            <button class="btn" id="rigRead">读频率</button>
+            <button class="btn" id="rigPttBtn">按一下 PTT</button>
+          </div>
+          <div class="tx-state" id="rigMsg" style="margin-top:12px">—</div>
+          <p class="muted" style="margin:12px 0 0">
+            协议细节由 Hamlib（与 JTDX 同源）负责；这里只做选项映射。
+            协谷 X6100 在型号里搜 “X6100”，串口选它的 USB 串口口，波特率按机器菜单里的 CAT 速率填（原厂默认 19200）。
+            频率不在这里设置：主界面顶栏那个「频率」是唯一入口，改完会自动下发给电台，也进通联日志。
+            发射时会按上面的提前量拉 PTT、播完延时松开；关掉软件也会松 PTT。
+          </p>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
+
+<!-- ================= 记录本条通联 ================= -->
+<dialog id="dlgLog">
+  <form id="logForm" method="dialog">
+    <div class="dlg-h"><h2>记录本条通联</h2><span class="muted">用最近一次机读层的信息预填，都可修改</span></div>
+    <div class="log-grid">
+      <label>对方呼号<input id="logPeer" type="text" maxlength="12" placeholder="BG1ABC"></label>
+      <label>对方网格<input id="logGrid" type="text" maxlength="8" placeholder="OM89AB"></label>
+      <label>对方 QTH<input id="logQth" type="text" placeholder="城市 / 省份（可选）"></label>
+      <label>频率 kHz<input id="logFreq" type="number" min="1" step="1"></label>
+      <label>日期<input id="logDate" type="text" maxlength="8" placeholder="YYYYMMDD"></label>
+      <label>时间 UTC<input id="logTime" type="text" maxlength="4" placeholder="HHMM"></label>
+      <label>我方信号<input id="logRstSent" type="text" maxlength="6" placeholder="59"></label>
+      <label>对方信号<input id="logRstRcvd" type="text" maxlength="6" placeholder="59"></label>
+      <label>本机呼号<input id="logMyCall" type="text" maxlength="12"></label>
+      <label>本机网格<input id="logMyGrid" type="text" maxlength="8"></label>
+      <label>档位<select id="logMode"></select></label>
+      <label>备注<input id="logNote" type="text" placeholder="可选"></label>
+    </div>
+    <p class="muted" id="logHint" style="margin:10px 0 0">
+      呼号/网格默认取自最近一次机读层解出的报文头；信号报告按 RST 习惯填（如 59 / 579）。
+    </p>
+    <div class="row" style="justify-content:flex-end;margin-top:14px">
+      <button class="btn" value="cancel" id="logCancel">取消</button>
+      <button class="btn primary" value="save" id="logSave">保存并记入日志</button>
+    </div>
+  </form>
+</dialog>
+
+<!-- ================= 设置 ================= -->
+<dialog id="dlgSettings">
+  <form id="setForm" method="dialog">
+    <div class="dlg-h"><h2>设置</h2><span class="muted">改动保存后立即生效</span></div>
+    <div class="dlg-b">
+      <fieldset>
+        <legend>本台信息</legend>
+        <div class="grid2">
+          <div class="field"><span>呼号</span><input id="setCall" type="text" autocomplete="off"></div>
+          <div class="field"><span>网格</span><input id="setGrid" type="text" autocomplete="off"></div>
+        </div>
+        <div class="field"><span>默认消息（保存本台信息后按呼号重新生成）</span>
+          <div id="msgList"></div>
+          <div class="row" style="margin-top:2px">
+            <button type="button" class="btn sm" id="msgAdd">添加一条</button>
+            <button type="button" class="btn sm" id="msgReset">按呼号重建</button>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>音频</legend>
+        <div class="grid2">
+          <div class="field"><span>输入设备（收信）</span>
+            <select id="setInDev"></select></div>
+          <div class="field"><span>输出设备（发射）</span>
+            <select id="setOutDev"></select></div>
+        </div>
+        <label class="chk"><input type="checkbox" id="setLoop"> 输入走系统混音（抓电脑正在播放的声音）</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>发射时序</legend>
+        <div class="grid2">
+          <div class="field"><span>时差补偿（毫秒，可负）</span>
+            <input id="setTxOffset" type="number" step="10" min="-5000" max="5000"></div>
+          <div class="field"><span>说明</span>
+            <div class="muted" style="padding-top:8px">不到整十秒不发射；这里补偿射频链路与声卡的总延迟。</div></div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>文件</legend>
+        <div class="field"><span>生成文件保存位置</span>
+          <div class="row"><input id="setOutDir" type="text" style="flex:4">
+            <button type="button" class="btn" id="btnOpenDir" style="flex:1">打开目录</button></div>
+        </div>
+        <div class="grid2">
+          <div class="field"><span>保存瀑布图的时长</span>
+            <select id="setWfSecs">
+              <option value="15">最近 15 秒</option>
+              <option value="30">最近 30 秒</option>
+              <option value="60">最近 60 秒</option>
+              <option value="custom">自定义…</option>
+            </select></div>
+          <div class="field"><span>自定义秒数</span>
+            <input id="setWfCustom" type="number" min="5" max="3600" step="5" disabled></div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>显示</legend>
+        <div class="grid2">
+          <div class="field"><span>存档区显示几个 10 秒块</span>
+            <select id="setArchive">
+              <option value="1">1 个（最近 10 秒）</option>
+              <option value="2">2 个（20 秒）</option>
+              <option value="3">3 个（30 秒）</option>
+              <option value="4">4 个（40 秒，版面较满）</option>
+            </select></div>
+          <div class="field"><span>说明</span>
+            <div class="muted" style="padding-top:8px">按墙钟 10 秒切块，只显示已经收完的块；采集不用暂停。</div></div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>调试</legend>
+        <label class="chk"><input type="checkbox" id="setDebug">
+          调试模式（显示生成 WAV、发→收自检、同步帧开关）</label>
+      </fieldset>
+    </div>
+    <div class="dlg-f">
+      <button type="button" class="btn sm" id="quitBtn" title="关掉引擎（应用窗口里直接关窗也行）">退出程序</button>
+      <div class="grow"></div>
+      <button type="button" class="btn" id="setCancel">取消</button>
+      <button type="button" class="btn primary" id="setSave">保存</button>
+    </div>
+  </form>
+</dialog>
+
+<!-- ================= 通联日志 ================= -->
+<dialog id="dlgQso">
+  <div class="dlg-h"><h2>通联日志</h2><span class="muted" id="qsoCount"></span></div>
+  <div class="dlg-b">
+    <table class="qso">
+      <thead><tr><th style="width:104px">呼号</th><th style="width:84px">网格</th><th style="width:80px">频率</th>
+        <th style="width:96px">日期</th><th style="width:72px">时间(UTC)</th>
+        <th style="width:70px">对方QTH</th><th style="width:64px">RST</th>
+        <th style="width:80px">模式</th><th>备注</th><th style="width:34px"></th></tr></thead>
+      <tbody id="qsoBody"></tbody>
+    </table>
+    <p class="muted" style="margin:10px 0 0">机读层只做草稿：点主界面「保存通联日志」才会落库，
+      表格里仍可逐条修改。导出的 ADIF 含 QTH / RST_SENT / RST_RCVD / STATION_CALLSIGN / MY_GRIDSQUARE。</p>
+  </div>
+  <div class="dlg-f">
+    <button class="btn sm" id="qsoAdd">新增一条</button>
+    <div class="grow"></div>
+    <button class="btn sm" id="qsoOpenDir">打开目录</button>
+    <button class="btn primary" id="qsoExport">导出 ADIF</button>
+    <button class="btn" id="qsoClose">关闭</button>
+  </div>
+</dialog>
+
+<!-- ================= DEBUG 日志 ================= -->
+<dialog id="dlgDebug">
+  <div class="dlg-h"><h2>DEBUG 日志</h2><span class="muted">本机运行记录，不含音频</span></div>
+  <div class="dlg-b"><pre id="debugLog"></pre></div>
+  <div class="dlg-f">
+    <button class="btn sm" id="dbgClear">清空</button>
+    <div class="grow"></div>
+    <button class="btn" id="dbgRows" title="导出最近解出的行数据与解调参数，用于排查">诊断包</button>
+    <button class="btn primary" id="dbgExport">导出</button>
+    <button class="btn" id="dbgClose">关闭</button>
+  </div>
+</dialog>
+
+<div class="dragmask" id="dragmask"><div>松手即可回放这个 WAV</div></div>
+<div id="toasts"></div>
+
+<script>
+'use strict';
+/* ============================================================
+   前端：一条 SSE 事件流 + 两块 canvas（瀑布 / 判读窗）。
+   铁律：瀑布只吃"行"（每行 = n 个音的相关功率），永远不吃"字符块"。
+   ============================================================ */
+const $ = id => document.getElementById(id);
+const clamp = (v,a,b) => v<a?a:(v>b?b:v);
+const STATIC = location.hash.includes('static');   // 截图/回归：不连实时流
+
+/* ---------------- 主题 ---------------- */
+function setTheme(t){ document.documentElement.dataset.theme = t; localStorage.setItem('cp16.theme', t); }
+setTheme(localStorage.getItem('cp16.theme') || 'light');
+
+/* ---------------- 提示 / 日志 ---------------- */
+function toast(msg, kind){
+  const el = document.createElement('div');
+  el.className = 'toast' + (kind ? ' ' + kind : '');
+  el.textContent = msg;
+  $('toasts').appendChild(el);
+  setTimeout(() => { el.style.opacity = '0'; el.style.transition = '.3s'; }, 4200);
+  setTimeout(() => el.remove(), 4600);
+}
+const LOG = [];
+function log(msg){
+  const t = new Date().toLocaleTimeString('zh-CN', {hour12:false});
+  LOG.unshift(`[${t}] ${msg}`);
+  if (LOG.length > 400) LOG.pop();
+  if ($('dlgDebug').open) $('debugLog').textContent = LOG.join('\n');
+}
+
+/* ---------------- 状态 ---------------- */
+const S = {
+  info: null, set: null,
+  devices: [], outputs: [], device: '',
+  kind: 'idle', evSrc: null, esOk: false,
+  lastId: 0, cells: 0, time: 0,
+  n: 16, rpc: 17, rowH: 9, gain: 14, lut: 'inferno',
+  peak: 1e-9, totalRows: 0, bounds: [], marks: [],
+  mode: 'M2', txTimer: null, txStart: 0, txTotal: 0,
+};
+const CAP = 1600;
+const RING = [];                    // 每行已上色的像素串（主界面/存档区用）
+const RAWV = [];                    // 每行原始功率（原始瀑布图自己上色用）
+const TMP = document.createElement('canvas');
+const TMPCTX = TMP.getContext('2d');
+
+/* ---------------- 配色 ---------------- */
+const LUTS = {
+  inferno: [[-60,7,11,18],[-40,34,17,58],[-26,87,21,102],[-14,168,44,99],[-4,240,116,74],[6,252,196,120],[16,255,247,214]],
+  teal:    [[-60,5,10,16],[-38,8,32,44],[-24,10,72,84],[-12,16,124,136],[-2,42,190,196],[8,140,238,232],[18,226,255,250]],
+  amber:   [[-60,10,8,14],[-38,44,26,10],[-24,92,54,10],[-12,160,96,16],[-2,224,152,32],[8,250,196,90],[18,255,240,190]],
+  gray:    [[-60,6,8,11],[-38,34,40,48],[-24,70,80,92],[-12,116,128,142],[-2,168,180,194],[8,216,226,236],[18,255,255,255]],
+};
+const LUTN = 256, LUTBUF = {};
+function lutBytes(name){
+  if (LUTBUF[name]) return LUTBUF[name];
+  const stops = LUTS[name] || LUTS.inferno;
+  const b = new Uint8Array(LUTN * 3);
+  for (let i = 0; i < LUTN; i++){
+    const t = i / (LUTN - 1) * (stops.length - 1);
+    const a = Math.floor(t), f = t - a, s0 = stops[a], s1 = stops[Math.min(a + 1, stops.length - 1)];
+    for (let c = 0; c < 3; c++) b[i*3+c] = Math.round(s0[c+1] + (s1[c+1]-s0[c+1]) * f);
+  }
+  LUTBUF[name] = b;
+  return b;
+}
+
+/* ---------------- 频率轴 ---------------- */
+function buildAxis(){
+  const f_lo = 800, df = 25, n = S.n, ys = [];
+  for (let i = 0; i < n; i += 4) ys.push(`<i style="top:${(100 - (i + .5) / n * 100).toFixed(2)}%">${f_lo + i*df}</i>`);
+  $('axisY').innerHTML = ys.join('');
+}
+
+/* ---------------- 瀑布 ---------------- */
+let rafPending = false;
+function wfReset(){
+  RING.length = 0; RAWV.length = 0;
+  S.peak = 1e-9; S.peakSeeded = false; S.mxHist = null;
+  S.totalRows = 0; S.bounds = []; S.marks = []; S.cells = 0;
+  $('empty').classList.add('hide');
+  drawWF();
+}
+function wfSize(){
+  const c = $('wf');
+  const dpr = window.devicePixelRatio || 1;
+  const w = Math.max(1, Math.round(c.clientWidth * dpr));
+  const h = Math.max(1, Math.round(c.clientHeight * dpr));
+  if (c.width !== w || c.height !== h){ c.width = w; c.height = h; }
+  return {w, h, dpr};
+}
+function syncStripWidth(){
+  $('wfwrap').style.width = Math.max(64, S.n * S.rowH) + 'px';
+}
+function rowToPixels(row){
+  const lut = lutBytes(S.lut);
+  const peak = Math.max(S.peak, 1e-12);
+  const lo = -(8 + S.gain);   // 8..68 dB 动态范围，滑杆往右=能看见更弱的部分
+  const out = new Uint8ClampedArray(row.length * 4);
+  for (let i = 0; i < row.length; i++){
+    const db = 10 * Math.log10(Math.max(row[i], 1e-15) / peak);
+    const t = clamp((db - lo) / (-lo), 0, 1) ** 1.15;
+    const k = clamp(Math.round(t * (LUTN - 1)), 0, LUTN - 1);
+    out[i*4] = lut[k*3]; out[i*4+1] = lut[k*3+1]; out[i*4+2] = lut[k*3+2]; out[i*4+3] = 255;
+  }
+  return out;
+}
+function wfPush(rows){
+  for (const row of rows){
+    if (row.length !== S.n){ S.n = row.length; RING.length = 0; buildAxis(); syncStripWidth(); }
+    let mx = 0;
+    for (const v of row) if (v > mx) mx = v;
+    // 峰值不能一上来就信：采集启动常有一下爆音（全幅），
+    // 用它当参考会把后面真正有用的行压成 -80 dB，画面全黑。
+    // 先攒 24 行的极大值，取 90% 分位作为基准；之后按 2%/行衰减跟随。
+    if (!S.peakSeeded){
+      (S.mxHist || (S.mxHist = [])).push(mx);
+      if (S.mxHist.length >= 24){
+        const h = S.mxHist.slice().sort((a, b) => a - b);
+        S.peak = h[Math.floor(h.length * 0.9)] || mx || 1e-9;
+        S.peakSeeded = true;
+        S.mxHist = null;
+      } else {
+        S.peak = Math.max(mx, S.peak || 0);
+      }
+    } else {
+      S.peak = Math.max(mx, S.peak * 0.98);
+    }
+    RING.push(rowToPixels(row));
+    RAWV.push(Float32Array.from(row));
+    if (RING.length > CAP) RING.shift();
+    if (RAWV.length > CAP) RAWV.shift();
+    S.totalRows++;
+  }
+  scheduleDraw();
+}
+function scheduleDraw(){
+  if (rafPending) return;
+  rafPending = true;
+  requestAnimationFrame(() => { rafPending = false; drawWF(); drawArchive(); if ($('page-raw').classList.contains('on')) drawRaw(true); });
+}
+function drawWF(){
+  const c = $('wf'), ctx = c.getContext('2d');
+  const {w, h, dpr} = wfSize();
+  ctx.setTransform(1,0,0,1,0,0);
+  ctx.imageSmoothingEnabled = false;
+  ctx.fillStyle = '#070b12'; ctx.fillRect(0, 0, w, h);
+  const vis = Math.min(CAP, Math.max(1, Math.floor(h / (S.rowH * dpr))));
+  const rows = Math.min(vis, RING.length);
+  if (rows > 0){
+    const n = S.n;
+    if (TMP.width !== n || TMP.height !== vis){ TMP.width = n; TMP.height = vis; }
+    const img = TMPCTX.createImageData(n, vis);
+    const off = vis - rows;
+    for (let i = 0; i < rows; i++) img.data.set(RING[RING.length - rows + i], ((off + i) * n) * 4);
+    TMPCTX.putImageData(img, 0, 0);
+    ctx.drawImage(TMP, 0, off, n, rows, 0, h - rows * S.rowH * dpr, w, rows * S.rowH * dpr);
+  }
+  ctx.strokeStyle = 'rgba(255,255,255,.05)';
+  ctx.lineWidth = 1;
+  for (let i = 1; i < S.n; i++){
+    const x = Math.round(i / S.n * w) + .5;
+    ctx.beginPath(); ctx.moveTo(x, 0); ctx.lineTo(x, h); ctx.stroke();
+  }
+  // 字分隔线（引擎报字数时记下的精确边界）
+  if (S.rpc > 0 && rows > 0){
+    ctx.strokeStyle = 'rgba(126,226,232,.18)';
+    const y0 = h - rows * S.rowH * dpr, base = S.totalRows - rows;
+    const marks = S.bounds.length ? S.bounds : [];
+    for (const m of marks){
+      if (m < base || m > S.totalRows) continue;
+      const y = Math.round(y0 + (m - base) * S.rowH * dpr) + .5;
+      ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(w, y); ctx.stroke();
+    }
+  }
+  const g = ctx.createLinearGradient(0, h - 26 * dpr, 0, h);
+  g.addColorStop(0, 'rgba(7,11,18,0)');
+  g.addColorStop(1, 'rgba(126,226,232,.10)');
+  ctx.fillStyle = g; ctx.fillRect(0, h - 26 * dpr, w, 26 * dpr);
+}
+
+/* ---------------- 存档区（按 10 秒分块，替代原来的判读窗） ----------------
+   为什么这么改：判读窗只给"最近几个字"，实用性有限；而瀑布回看要暂停，
+   一暂停采集就又断档。存档区把已经收完的 10 秒块留下来，边收边看历史，
+   不需要停采集。分块按墙钟 10 秒（与同步帧同周期）切。 */
+
+function archiveBlocks(){
+  const N = Math.min(4, Math.max(1, (S.set && S.set.archive_blocks) || 3));
+  if (!S.marks.length) return [];
+  const nowBlock = Math.floor((S.time || 0) / 10);      // 正在写的那一块
+  const groups = new Map();
+  for (const m of S.marks){
+    const b = Math.floor(m.t / 10);
+    if (b >= nowBlock) continue;
+    if (!groups.has(b)) groups.set(b, []);
+    groups.get(b).push(m);
+  }
+  const keys = [...groups.keys()].sort((a, b) => b - a).slice(0, N);   // 新的在前
+  const rpc = Math.max(1, S.rpc);
+  return keys.map(block => {
+    const items = groups.get(block);
+    const segs = items.map(m => ({start: m.row - rpc, end: m.row}));
+    return {block, segs, label: `${block * 10}–${block * 10 + 10} s`};
+  });
+}
+function drawArchive(force){
+  const c = $('ar');
+  if (!c || !c.clientWidth) return;
+  const now = performance.now();
+  if (!force && now - gwLast < 120) return;
+  gwLast = now;
+  const dpr = window.devicePixelRatio || 1;
+  const cw = Math.max(1, Math.round(c.clientWidth * dpr));
+  const chh = Math.max(1, Math.round(c.clientHeight * dpr));
+  if (c.width !== cw || c.height !== chh){ c.width = cw; c.height = chh; }
+  const g = c.getContext('2d');
+  g.setTransform(1, 0, 0, 1, 0, 0);
+  g.fillStyle = '#060a11'; g.fillRect(0, 0, cw, chh);
+
+  const rpc = Math.max(1, S.rpc), n = S.n;
+  const newestFirst = archiveBlocks();
+  $('arHint').textContent = `最近 ${(S.set && S.set.archive_blocks) || 3} × 10 秒`;
+  if (!newestFirst.length){
+    g.fillStyle = '#3e4a5c';
+    g.font = `${Math.round(11 * dpr)}px "Segoe UI","Microsoft YaHei",sans-serif`;
+    g.textAlign = 'center';
+    g.fillText('每收完 10 秒，就在这里竖着存档一块', cw / 2, chh / 2);
+    g.textAlign = 'start';
+    return;
+  }
+  // 竖排：每块是一列（或几列）字，字自上而下按原始顺序排；块按时间从左到右
+  const blocks = newestFirst.slice().reverse();     // 旧的放左边
+  const pad = 10 * dpr, labelH = 24 * dpr, colGap = 10 * dpr, blockGap = 22 * dpr;
+  const availH = chh - pad * 2 - labelH;
+  const availW = cw - pad * 2;
+
+  // 选格子大小：先保证一列能放下整块（否则分列），再保证总宽度够
+  let cell = 0, perCol = 0;
+  for (let cand = 14; cand >= 2; cand -= 0.5){
+    const pc = Math.max(1, Math.floor(availH / (rpc * cand)));
+    let cols = 0;
+    for (const b of blocks) cols += Math.ceil(b.segs.length / pc);
+    const w = cols * n * cand + Math.max(0, cols - blocks.length) * colGap
+              + Math.max(0, blocks.length - 1) * blockGap;
+    if (w <= availW){ cell = cand; perCol = pc; break; }
+  }
+  if (!cell){ cell = 2; perCol = Math.max(1, Math.floor(availH / (rpc * 2))); }
+
+  const base = S.totalRows - RING.length;
+  let x = pad;
+  for (let bi = 0; bi < blocks.length; bi++){
+    const blk = blocks[bi];
+    const colsInBlock = Math.ceil(blk.segs.length / perCol);
+    const blockW = colsInBlock * n * cell + Math.max(0, colsInBlock - 1) * colGap;
+
+    // 块头：−N · 时间区间 · 字数
+    g.fillStyle = '#5f6e86';
+    g.font = `${Math.round(10.5 * dpr)}px Consolas,monospace`;
+    const no = blocks.length - bi;
+    g.fillText(`−${no}`, x, pad + 11 * dpr);
+    g.fillStyle = '#3f4b5d';
+    g.fillText(`${blocks[bi].label}`, x, pad + 22 * dpr);
+    g.fillStyle = '#4b5769';
+    g.fillText(`${blk.segs.length} 字`, x + blockW - 30 * dpr, pad + 22 * dpr);
+
+    // 字块：块内先竖着一列一列排（左列先），每列自上而下
+    for (let k = 0; k < blk.segs.length; k++){
+      const col = Math.floor(k / perCol);
+      const rowInCol = k % perCol;
+      const seg = blk.segs[k];
+      const gx = x + col * (n * cell + colGap);
+      const gy = pad + labelH + rowInCol * rpc * cell;
+      const from = Math.max(seg.start, base), to = Math.min(seg.end, base + RING.length);
+      for (let a = from; a < to; a++){
+        const px = RING[a - base], yy = (a - seg.start) * cell;
+        for (let t = 0; t < n; t++){
+          const rr = px[t*4], gg = px[t*4+1], bb = px[t*4+2];
+          if (rr < 30 && gg < 30 && bb < 34) continue;
+          g.fillStyle = `rgb(${rr},${gg},${bb})`;
+          g.fillRect(gx + t*cell, gy + yy, cell, cell);
+        }
+      }
+    }
+    // 块之间的竖分隔线
+    if (bi < blocks.length - 1){
+      const lx = Math.round(x + blockW + blockGap / 2) + .5;
+      g.strokeStyle = 'rgba(255,255,255,.06)';
+      g.beginPath(); g.moveTo(lx, pad + 4 * dpr); g.lineTo(lx, chh - pad); g.stroke();
+    }
+    x += blockW + blockGap;
+  }
+}
+
+let gwLast = 0;
+/* ---------------- 页面切换 ---------------- */
+const RAW = { rowH: 6, gain: 18, lut: 'inferno', span: 30, smooth: false, grid: true };
+function switchPage(name){
+  document.querySelectorAll('#pageTabs button').forEach(b => b.classList.toggle('on', b.dataset.page === name));
+  document.querySelectorAll('.page').forEach(p => p.classList.toggle('on', p.id === 'page-' + name));
+  if (name === 'raw'){ drawRaw(true); }
+  if (name === 'rig'){
+    refreshRig(true);
+    clearInterval(rigTimer);
+    rigTimer = setInterval(() => {
+      if ($('page-rig').classList.contains('on')) refreshRig(false);
+    }, 1500);
+  } else {
+    clearInterval(rigTimer);
+    rigTimer = null;
+  }
+  if (name === 'rig'){
+    refreshRig(true);
+    clearInterval(rigTimer);
+    rigTimer = setInterval(() => {
+      if ($('page-rig').classList.contains('on')) refreshRig(false);
+    }, 1500);
+  } else {
+    clearInterval(rigTimer);
+    rigTimer = null;
+  }
+  if (name === 'main') { wfSize(); drawWF(); drawArchive(true); }
+}
+document.querySelectorAll('#pageTabs button').forEach(b => b.onclick = () => switchPage(b.dataset.page));
+
+/* ---------------- 原始瀑布图 ----------------
+   SDR 式流水：横轴频率（左低右高）、时间自上而下、1 帧 = 1 像素行，
+   不做任何缩放/压缩。颜色就是该频点的 dBFS，不做字形切分。
+   数据来自服务端 raw 事件（512 bin 覆盖 0–4000 Hz）。 */
+const RAWD = {
+  n: 512,
+  lo: 200, hi: 1800,
+  gain: 24,
+  lineH: 1,            // 流速固定 1×：一帧 = 一行像素，不复制、不压缩
+  lvl: -120, peak: -120,
+  frames: 0,
+  lut: null,
+  dpr: 1,
+  back: null,          // 离屏画布：plotW × plotH（设备像素），逐帧上移一行
+  backW: 0, backH: 0,
+  rate: 0,             // 行率（帧/秒），只用于时间刻度
+  lastT: 0,
+  hist: [],            // 最近若干帧的 bin 数据（鼠标读数用，避免读画布）
+};
+
+function rawLutBuild(){
+  const stops = [[0, 5, 9, 14], [0.22, 10, 36, 48], [0.5, 22, 120, 140],
+                 [0.74, 96, 232, 214], [1.0, 236, 255, 250]];
+  const out = new Array(256);
+  for (let i = 0; i < 256; i++){
+    const t = i / 255;
+    let a = stops[0], b = stops[stops.length - 1];
+    for (let k = 0; k < stops.length - 1; k++){
+      if (t >= stops[k][0] && t <= stops[k + 1][0]){ a = stops[k]; b = stops[k + 1]; break; }
+    }
+    const u = (t - a[0]) / Math.max(1e-6, b[0] - a[0]);
+    out[i] = [Math.round(a[1] + (b[1] - a[1]) * u),
+              Math.round(a[2] + (b[2] - a[2]) * u),
+              Math.round(a[3] + (b[3] - a[3]) * u)];
+  }
+  return out;
+}
+RAWD.lut = rawLutBuild();
+
+function rawGeometry(){
+  const c = $('rawCanvas');
+  const dpr = window.devicePixelRatio || 1;
+  const w = Math.max(1, Math.round(c.clientWidth * dpr));
+  const h = Math.max(1, Math.round(c.clientHeight * dpr));
+  if (c.width !== w || c.height !== h){ c.width = w; c.height = h; }
+  RAWD.dpr = dpr;
+  const padL = Math.round(40 * dpr);   // 左侧时间刻度
+  const padB = Math.round(20 * dpr);   // 底部频率刻度
+  const padR = Math.round(46 * dpr);   // 右侧 dB 刻度
+  return {w, h, dpr, padL, padR, padB,
+          plotW: Math.max(1, w - padL - padR),
+          plotH: Math.max(1, h - padB)};
+}
+
+function rawEnsureBack(plotW, plotH){
+  if (!RAWD.back || RAWD.backW !== plotW || RAWD.backH !== plotH){
+    RAWD.back = document.createElement('canvas');
+    RAWD.back.width = plotW;
+    RAWD.back.height = plotH;
+    const g = RAWD.back.getContext('2d');
+    g.fillStyle = '#05090f'; g.fillRect(0, 0, plotW, plotH);
+    RAWD.backW = plotW; RAWD.backH = plotH;
+  }
+}
+
+function rawApplyRange(){
+  // 中心频率 + 带宽 → 显示区间（限制在 0–4000 Hz 之内）
+  let center = Math.round(+$('rawCenter').value || 1000);
+  let span = Math.round(+$('rawSpan').value || 1600);
+  span = Math.max(100, Math.min(4000, span));
+  let lo = center - span / 2;
+  let hi = center + span / 2;
+  if (lo < 0){ hi -= lo; lo = 0; }
+  if (hi > 4000){ lo -= (hi - 4000); hi = 4000; }
+  lo = Math.max(0, Math.round(lo));
+  hi = Math.min(4000, Math.round(hi));
+  RAWD.lo = lo;
+  RAWD.hi = hi;
+  $('rawCenterTxt').textContent = center + ' Hz';
+  $('rawSpanTxt').textContent = span + ' Hz';
+  drawRaw(true);
+}
+
+/* 一帧 = 一像素行：整图上移 1 px，新行画在最底下 */
+function rawPush(ev){
+  let bytes;
+  try{
+    const bin = atob(ev.db);
+    bytes = new Uint8Array(bin.length);
+    for (let i = 0; i < bin.length; i++) bytes[i] = bin.charCodeAt(i);
+  }catch(e){ return; }
+
+  const g0 = rawGeometry();
+  rawEnsureBack(g0.plotW, g0.plotH);
+  RAWD.n = bytes.length;
+  RAWD.lvl = ev.lvl; RAWD.peak = ev.peak;
+  if (RAWD.lastT > 0 && ev.t > RAWD.lastT){
+    const dt = ev.t - RAWD.lastT;
+    const inst = 1 / dt;
+    RAWD.rate = RAWD.rate ? RAWD.rate * 0.9 + inst * 0.1 : inst;
+  }
+  RAWD.lastT = ev.t;
+  RAWD.frames++;
+  const cap = Math.ceil(g0.plotH / Math.max(1, RAWD.lineH)) + 4;
+  RAWD.hist.push(bytes);
+  while (RAWD.hist.length > cap) RAWD.hist.shift();
+
+  const bg = RAWD.back.getContext('2d');
+  const lh = Math.max(1, RAWD.lineH | 0);
+  // 上移 lh 行（自拷贝），底部空出 lh 行
+  bg.globalCompositeOperation = 'copy';
+  bg.drawImage(RAWD.back, 0, -lh);
+  bg.globalCompositeOperation = 'source-over';
+
+  const W = g0.plotW, H = g0.plotH;
+  const strip = bg.createImageData(W, 1);
+  const gain = 1 + (RAWD.gain - 24) / 40;
+  const n = RAWD.n;
+  for (let x = 0; x < W; x++){
+    const f = RAWD.lo + (RAWD.hi - RAWD.lo) * (x / Math.max(1, W - 1));
+    let bi = Math.round(f / 4000 * n);
+    if (bi < 0) bi = 0; else if (bi >= n) bi = n - 1;
+    let v = bytes[bi] * gain;
+    if (v > 255) v = 255;
+    const col = RAWD.lut[v | 0];
+    const o = x * 4;
+    strip.data[o] = col[0]; strip.data[o + 1] = col[1];
+    strip.data[o + 2] = col[2]; strip.data[o + 3] = 255;
+  }
+  bg.putImageData(strip, 0, H - 1);
+
+  if (S.rawOnce && RAWD.frames >= 1000){
+    S.rawOnce = false;
+    document.body.dataset.rawRows = String(RAWD.frames);
+    try{ closeStream(); }catch(e){}
+  }
+
+  drawRaw();
+}
+
+function drawRaw(force){
+  const c = $('rawCanvas');
+  if (!c || !c.clientWidth) return;
+  const {w, h, dpr, padL, padR, padB, plotW, plotH} = rawGeometry();
+  const g = c.getContext('2d');
+  g.setTransform(1, 0, 0, 1, 0, 0);
+  g.fillStyle = '#05090f'; g.fillRect(0, 0, w, h);
+
+  if (!RAWD.back){
+    $('rawEmpty').classList.remove('hide');
+    $('rawInfo').textContent = '0 帧';
+  } else {
+    $('rawEmpty').classList.add('hide');
+    g.imageSmoothingEnabled = false;
+    g.drawImage(RAWD.back, 0, 0, RAWD.backW, RAWD.backH, padL, 0, plotW, plotH);
+
+    // ---- 坐标轴 ----
+    g.strokeStyle = 'rgba(140,170,180,.35)';
+    g.fillStyle = 'rgba(205,225,235,.9)';
+    g.font = `${Math.round(11 * dpr)}px ui-monospace, Consolas, monospace`;
+    g.textBaseline = 'middle';
+    g.lineWidth = Math.max(1, dpr * 0.6);
+
+    // 横轴：频率
+    const span = RAWD.hi - RAWD.lo;
+    const cand = [10, 20, 25, 50, 100, 200, 250, 500, 1000];
+    let step = cand[cand.length - 1];
+    for (const c2 of cand){ if (span / c2 <= 9){ step = c2; break; } }
+    for (let f = Math.ceil(RAWD.lo / step) * step; f <= RAWD.hi; f += step){
+      const x = padL + (f - RAWD.lo) / span * plotW;
+      g.beginPath(); g.moveTo(x, plotH); g.lineTo(x, plotH + 3 * dpr); g.stroke();
+      g.textAlign = 'center';
+      g.fillText(String(f), x, plotH + 11 * dpr);
+    }
+    // 右侧：dB 刻度（背景色块从 -100 到 0 线性映射，仅作参考尺）
+    for (const db of [-100, -80, -60, -40, -20, 0]){
+      const y = plotH - (db + 100) / 100 * plotH;
+      g.beginPath(); g.moveTo(w - padR, y); g.lineTo(w - padR + 4 * dpr, y); g.stroke();
+      g.textAlign = 'left';
+      g.fillText(String(db), w - padR + 6 * dpr, Math.max(6 * dpr, Math.min(plotH - 6 * dpr, y)));
+    }
+    // 左侧：时间（自上而下越来越旧）
+    const rate = (RAWD.rate || 50) / Math.max(1, RAWD.lineH);
+    const secPerScreen = plotH / rate;
+    const tstep = secPerScreen > 40 ? 10 : (secPerScreen > 20 ? 5 : 2);
+    for (let k = 0; k * tstep <= secPerScreen; k++){
+      const y = plotH - (k * tstep) * rate;
+      if (y < 2 * dpr) break;
+      g.beginPath(); g.moveTo(padL - 4 * dpr, y); g.lineTo(padL, y); g.stroke();
+      g.textAlign = 'right';
+      g.fillText(k === 0 ? '0s' : `-${k * tstep}s`, padL - 6 * dpr, Math.max(6 * dpr, y));
+    }
+    g.strokeStyle = 'rgba(140,170,180,.45)';
+    g.strokeRect(padL, 0, plotW, plotH);
+
+    $('rawInfo').textContent = `${RAWD.frames} 帧 · 实时`;
+    $('rawDev').textContent = `${RAWD.lo}–${RAWD.hi} Hz · ${RAWD.n} bin · ${(RAWD.rate || 50).toFixed(0)} 帧/秒`;
+    const norm = db => Math.max(0, Math.min(1, (db + 100) / 100));
+    $('rawRms').style.width = (norm(RAWD.lvl) * 100).toFixed(1) + '%';
+    $('rawPeak').style.left = (norm(RAWD.peak) * 100).toFixed(1) + '%';
+    $('rawLvlTxt').textContent = `RMS ${RAWD.lvl.toFixed(1)} · 峰值 ${RAWD.peak.toFixed(1)} dBFS`;
+  }
+  if (force) return;
+}
+
+/* ---------------- 原始瀑布图（结束） ---------------- */
+
+/* ---------------- 保存瀑布图（主界面用，别和原始瀑布图混在一起） ----------------
+   按设置里的时长截取：RING 每行 = 某时刻 n 个音的像素条，
+   行率用 总行数/总时长 估，堆成一张留证图。 */
+async function saveWaterfall(){
+  if (!RING.length){ toast('还没有数据', 'warn'); return; }
+  const secs = +((S.set && S.set.waterfall_secs) || 30);
+  const rowH = S.rowH || 6;
+  const n = S.n || (RING[0].length / 4);
+  const rate = (S.totalRows > 0 && S.t > 0.5) ? S.totalRows / S.t : 30;
+  const rows = Math.max(1, Math.min(RING.length, Math.round(secs * rate)));
+
+  const img = document.createElement('canvas');
+  img.width = n; img.height = rows;
+  const ig = img.getContext('2d');
+  const data = ig.createImageData(n, rows);
+  const start = RING.length - rows;
+  for (let i = 0; i < rows; i++) data.data.set(RING[start + i], i * n * 4);
+  ig.putImageData(data, 0, 0);
+
+  const out = document.createElement('canvas');
+  out.width = n * rowH; out.height = rows * rowH;
+  const g = out.getContext('2d');
+  g.fillStyle = '#070b12'; g.fillRect(0, 0, out.width, out.height);
+  g.imageSmoothingEnabled = false;
+  g.drawImage(img, 0, 0, n, rows, 0, 0, out.width, out.height);
+  g.fillStyle = 'rgba(230,245,250,.9)';
+  g.font = `${Math.max(11, Math.round(rowH * 2))}px ui-monospace, Consolas, monospace`;
+  g.fillText(`CP16+  ${secs} s  ${rows} 行`, 8, out.height - 8);
+
+  const blob = await new Promise(r => out.toBlob(r, 'image/png'));
+  try{
+    const resp = await fetch('/api/save-png?name=' + encodeURIComponent(`cp16plus-${stamp()}.png`),
+      {method:'POST', body: blob});
+    const j = await resp.json();
+    toast('已保存：' + j.path);
+    log('保存瀑布图 ' + j.path);
+  }catch(e){ toast('保存失败：' + e.message, 'err'); }
+}
+
+async function saveRawPng(){
+  const c = $('rawCanvas');
+  if (!RAWD.back || !RAWD.frames){ toast('还没有数据', 'warn'); return; }
+  const blob = await new Promise(r => c.toBlob(r, 'image/png'));
+  try{
+    const resp = await fetch('/api/save-png?name=' + encodeURIComponent(`cp16plus-raw-${stamp()}.png`),
+      {method:'POST', body: blob});
+    const j = await resp.json();
+    toast('已导出：' + j.path);
+    log('导出原始瀑布图 ' + j.path);
+  }catch(e){ toast('导出失败：' + e.message, 'err'); }
+}
+
+function stamp(){
+  const d = new Date();
+  const p = n => String(n).padStart(2, '0');
+  return `${d.getUTCFullYear()}${p(d.getUTCMonth()+1)}${p(d.getUTCDate())}-${p(d.getUTCHours())}${p(d.getUTCMinutes())}${p(d.getUTCSeconds())}`;
+}
+
+/* ---------------- 事件流 ---------------- */
+function hideEmpty(){ $('empty').classList.add('hide'); }
+function handleEvent(d, replayMode){
+  if (typeof d.id === 'number'){
+    if (d.id <= S.lastId) return;
+    S.lastId = d.id;
+  }
+  // 原始瀑布的行：单独一路，交给 rawPush 上色（不参与字形判读）
+  if (d.kind === 'raw'){ rawPush(d); return; }
+  if (d.rows && d.rows.length){ hideEmpty(); wfPush(d.rows); }
+  if (typeof d.t === 'number'){
+    S.time = d.t;
+    $('footTime').textContent = 't = ' + d.t.toFixed(1) + ' s';
+  }
+  if (typeof d.cells === 'number' && d.cells > S.cells){
+    const delta = d.cells - S.cells, rpc = Math.max(1, S.rpc);
+    const at = (typeof d.t === 'number') ? d.t : S.time;
+    for (let k = 0; k < delta; k++){
+      const row = S.totalRows - (delta - 1 - k) * rpc;
+      S.bounds.push(row);
+      S.marks.push({row, t: at});
+    }
+    if (S.bounds.length > 64) S.bounds = S.bounds.slice(-64);
+    if (S.marks.length > 256) S.marks = S.marks.slice(-256);
+    S.cells = d.cells;
+  }
+  if (d.kind === 'summary'){
+    const call = d.summary.hdr ? d.summary.hdr.call : '';
+    log('会话结束：' + d.summary.cells + ' 字' + (call ? '，来自 ' + call : ''));
+    if (!replayMode){
+      toast(call ? `收到 ${call}` : '会话结束');
+      refreshStatus();
+      loadQso();
+    }
+  }
+  if (d.kind === 'error'){
+    log('错误：' + (d.error || ''));
+    if (!replayMode) toast(d.error || '采集出错', 'err');
+    refreshStatus();
+  }
+}
+function closeStream(){ if (S.evSrc){ S.evSrc.close(); S.evSrc = null; } S.esOk = false; }
+function openStream(){
+  closeStream();
+  const es = new EventSource('/api/events');
+  S.evSrc = es;
+  es.onopen = () => { S.esOk = true; };
+  es.onmessage = ev => { try{ handleEvent(JSON.parse(ev.data), false); }catch(e){} };
+  es.onerror = () => { if (S.esOk){ S.esOk = false; log('事件流断开，自动重连中'); } };
+}
+
+/* ---------------- API ---------------- */
+async function api(path, opt){
+  const r = await fetch(path, opt);
+  if (!r.ok) throw new Error(await r.text());
+  return r;
+}
+async function refreshStatus(){
+  try{
+    const j = await (await api('/api/status')).json();
+    linkSetFromStatus(j);
+  }catch(e){}
+
+  try{
+    const st = await (await api('/api/status')).json();
+    S.kind = st.kind || 'idle';
+    $('devLabel').textContent = st.device ? st.device : '—';
+    const live = st.kind !== 'idle';
+    $('liveBtn').textContent = live ? '停止接收' : '开始接收';
+    $('liveBtn').classList.toggle('stop', live);
+    $('liveBtn').classList.toggle('primary', !live);
+    const dot = $('dot');
+    dot.className = 'dot ' + (st.kind === 'live' ? 'live' : (st.kind === 'replay' ? 'wait' : ''));
+    $('stateText').textContent = st.kind === 'live' ? '正在接收' : st.kind === 'replay' ? '回放中' : '空闲';
+    $('footState').textContent = st.msg || (st.kind === 'idle' ? '空闲' : st.kind);
+    if (st.rpc){ S.rpc = st.rpc; }
+    return st;
+  }catch(e){ return null; }
+}
+async function loadDevices(){
+  try{
+    const d = await (await api('/api/devices')).json();
+    S.devices = d.devices || []; S.outputs = d.outputs || [];
+    const inSaved = S.devices.some(x => x.name === d.saved) ? d.saved : '';
+    const outSaved = S.outputs.some(x => x.name === d.saved_out) ? d.saved_out : '';
+    S.device = inSaved || d.default || (S.devices[0] && S.devices[0].name) || '';
+    fillSelect($('setInDev'), S.devices, S.device, inSaved ? '（上次）' : '（默认）');
+    fillSelect($('setOutDev'), S.outputs, outSaved || d.default_out || '', outSaved ? '（上次）' : '（默认）');
+  }catch(e){ log('设备枚举失败：' + e.message); }
+}
+function fillSelect(sel, list, pick, defMark){
+  if (!sel) return;
+  if (!list.length){ sel.innerHTML = '<option value="">（没有可用设备）</option>'; return; }
+  sel.innerHTML = list.map(x => {
+    const mark = x.name === pick ? defMark : (x.default ? '（系统默认）' : '');
+    return `<option value="${esc(x.name)}"${x.name === pick ? ' selected' : ''}>${esc(x.name)}${mark}</option>`;
+  }).join('');
+}
+function esc(s){ return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
+
+/* ---------------- 机读层状态 ----------------
+   显示的字段来自 /api/status（活线后补：sync / offset_ms / hdr 结构体）。
+   现在先按"能拿到什么显示什么"写，缺的显示「—」，接好线自动就有值。 */
+function linkSetText(id, text){
+  const el = $(id);
+  if (el) el.textContent = (text === undefined || text === null || text === '') ? '—' : text;
+}
+
+function applyLinkInfo(){
+  const L = S.link || {};
+  const dot = $('linkDot');
+  const st = L.state || 'none';
+  if (dot){
+    dot.className = 'dot' + (st === 'ok' ? ' ok' : st === 'warn' ? ' warn' : st === 'bad' ? ' bad' : '');
+  }
+  const stateText = st === 'ok' ? (L.peer ? '已同步 · 已解出报文头' : '已同步 · 等待报文头')
+    : st === 'warn' ? '弱同步' : st === 'bad' ? '解析失败' : st === 'wait' ? '等待新的报文头' : '未收到';
+  linkSetText('linkState', stateText);
+  let offText = '—';
+  if (L.offsetMs !== undefined && L.offsetMs !== null){
+    const ms = L.offsetMs;
+    const sign = ms >= 0 ? '+' : '−';
+    const mag = Math.abs(ms);
+    offText = sign + (mag >= 1000 ? (mag / 1000).toFixed(1) + ' s' : Math.round(mag) + ' ms');
+  }
+  linkSetText('linkOffset', offText);
+  linkSetText('linkPeer', L.peer);
+  linkSetText('linkGrid', L.grid);
+  linkSetText('linkType', L.type);
+  linkSetText('linkLen', L.len ? String(L.len) + ' 字' : '');
+  linkSetText('linkMode', L.mode);
+  linkSetText('linkAge', L.ageS === undefined || L.ageS === null ? '' : L.ageS.toFixed(1) + ' s 前');
+}
+
+function linkSetFromStatus(st){
+  if (!st) return;
+  const L = S.link || (S.link = {});
+  if (typeof st.sync === 'string') L.state = st.sync === 'none' ? 'none' : st.sync;
+  if (typeof st.offset_ms === 'number') L.offsetMs = st.offset_ms;
+
+  // 保存过日志后要等新的报文头：hdr_seq 不大于已处理的序号就忽略
+  if (typeof st.hdr_seq === 'number'){
+    if (S.linkSavedSeq !== undefined && st.hdr_seq <= S.linkSavedSeq){
+      L.peer = ''; L.grid = ''; L.len = 0; L.type = ''; L.mode = ''; L.at = null; L.ageS = null;
+      L.state = st.sync === 'none' ? 'none' : 'wait';
+      applyLinkInfo();
+      return;
+    }
+  }
+
+  if (st.hdr_obj && typeof st.hdr_obj === 'object'){
+    const h = st.hdr_obj;
+    L.peer = h.call || '';
+    L.grid = h.grid || '';
+    L.len = h.length || h.len || 0;
+    L.type = TYPES[h.type] || '';
+    L.mode = h.mode || '';
+    L.at = (typeof h.t === 'number') ? h.t : null;
+  } else {
+    L.peer = ''; L.grid = ''; L.len = 0; L.type = ''; L.mode = ''; L.at = null;
+  }
+  if (L.at !== null && typeof st.t === 'number') L.ageS = Math.max(0, st.t - L.at);
+  else L.ageS = null;
+  applyLinkInfo();
+}
+
+const TYPES = ['CQ', 'QSO', '紧急', '公告', '呼号', '测试'];
+
+/* ---------------- 记录本条通联 ---------------- */
+function pad2(n){ return String(n).padStart(2, '0'); }
+
+function openLogDialog(){
+  const now = new Date();
+  const utc = {
+    y: now.getUTCFullYear(), m: pad2(now.getUTCMonth() + 1), d: pad2(now.getUTCDate()),
+    hh: pad2(now.getUTCHours()), mm: pad2(now.getUTCMinutes()),
+  };
+  const s = S.set || {};
+  const L = S.link || {};
+  $('logPeer').value = L.peer || '';
+  $('logGrid').value = L.grid || '';
+  $('logQth').value = '';
+  $('logFreq').value = String(s.freq_khz || '');
+  $('logDate').value = `${utc.y}${utc.m}${utc.d}`;
+  $('logTime').value = `${utc.hh}${utc.mm}`;
+  $('logRstSent').value = '59';
+  $('logRstRcvd').value = '59';
+  $('logMyCall').value = s.call || '';
+  $('logMyGrid').value = s.grid || '';
+  const sel = $('logMode');
+  const modes = (S.info && S.info.modes) ? S.info.modes.map(m => m.name || m) : ['M1', 'M2', 'M4', 'M8', '16N-M4', '24-M4'];
+  sel.innerHTML = modes.map(m => `<option${m === (s.mode || 'M2') ? ' selected' : ''}>${m}</option>`).join('');
+  $('logNote').value = '';
+  $('logHint').textContent = L.peer
+    ? '呼号/网格已按最近一次机读层解出的报文头预填，可自行修改。'
+    : '还没收到有效报文头，请手工填写呼号与网格。';
+  $('dlgLog').showModal();
+  setTimeout(() => $('logPeer').focus(), 30);
+}
+
+function logCollect(){
+  return {
+    call: ($('logPeer').value || '').trim().toUpperCase(),
+    grid: ($('logGrid').value || '').trim().toUpperCase(),
+    qth: ($('logQth').value || '').trim(),
+    freq: ($('logFreq').value || '').trim(),
+    date: ($('logDate').value || '').trim(),
+    time: ($('logTime').value || '').trim(),
+    rstSent: ($('logRstSent').value || '').trim(),
+    rstRcvd: ($('logRstRcvd').value || '').trim(),
+    myCall: ($('logMyCall').value || '').trim().toUpperCase(),
+    myGrid: ($('logMyGrid').value || '').trim().toUpperCase(),
+    mode: $('logMode').value,
+    note: ($('logNote').value || '').trim(),
+  };
+}
+
+async function submitLogEntry(){
+  const f = logCollect();
+  if (!f.call){ toast('对方呼号不能空着', 'err'); $('logPeer').focus(); return false; }
+  try{
+    const q = new URLSearchParams({
+      action: 'add', call: f.call, grid: f.grid, qth: f.qth, freq: f.freq,
+      date: f.date, time: f.time, mode: f.mode, note: f.note,
+      rst_sent: f.rstSent, rst_rcvd: f.rstRcvd,
+      my_call: f.myCall, my_grid: f.myGrid,
+    });
+    await api('/api/qso?' + q, {method: 'POST'});
+    // 落库后清空机读层草稿，等下一帧 HDR，避免上一条通联的信息继续留着误导
+    if (typeof S.link?.seq === 'number') S.linkSavedSeq = S.link.seq;
+    else S.linkSavedSeq = (S.linkSavedSeq || 0) + 1;
+    try{ await api('/api/link/clear', {method: 'POST'}); }catch(e){}
+    S.link = {state: 'wait', offsetMs: S.link ? S.link.offsetMs : null};
+    applyLinkInfo();
+    toast('已记入通联日志：' + f.call);
+    log('通联日志新增 ' + f.call + ' ' + f.grid + ' ' + f.freq + ' kHz');
+    return true;
+  }catch(e){
+    toast('保存失败：' + e.message, 'err');
+    return false;
+  }
+}
+
+/* ---------------- 设置 ---------------- */
+async function loadSettings(){
+  const s = await (await api('/api/settings')).json();
+  S.set = s;
+  S.mode = s.mode || 'M2';
+  applySettingsToUi();
+  return s;
+}
+function applySettingsToUi(){
+  const s = S.set || {};
+  $('txStation').textContent = `${s.call || '—'} ${s.grid || ''}`;
+  $('txDebug').classList.toggle('on', !!s.debug);
+  if (s.freq_khz) $('freqIn').value = s.freq_khz;
+  const seg = $('modeSeg');
+  if (seg && seg.dataset.built !== '1') buildModes();
+  [...(seg ? seg.children : [])].forEach(b => b.classList.toggle('on', b.dataset.mode === S.mode));
+  renderMessages();
+}
+function renderMessages(){
+  const box = $('txMsgs');
+  const list = (S.set && S.set.messages) || [];
+  if (!list.length){ box.innerHTML = '<span class="muted">（设置里可以加几条默认消息）</span>'; return; }
+  box.innerHTML = '';
+  list.forEach(m => {
+    const b = document.createElement('button');
+    b.textContent = m.label || m.text;
+    b.title = (m.label ? m.label + '：' : '') + m.text;
+    b.onclick = () => { $('txText').value = m.text; updateTxInfo(); updateGlyphs(); startTx(); };
+    box.appendChild(b);
+  });
+}
+async function saveSettings(fields){
+  const r = await api('/api/settings?' + new URLSearchParams(fields), {method:'POST'});
+  S.set = await r.json();
+  S.mode = S.set.mode;
+  applySettingsToUi();
+  return S.set;
+}
+function openSettings(){
+  const s = S.set || {};
+  $('setCall').value = s.call || '';
+  $('setGrid').value = s.grid || '';
+  $('setOutDir').value = s.out_dir || s.out_dir_effective || '';
+  $('setTxOffset').value = s.tx_offset_ms || 0;
+  $('setArchive').value = String(s.archive_blocks || 3);
+  $('setDebug').checked = !!s.debug;
+  $('setLoop').checked = !!s.loopback;
+  const secs = s.waterfall_secs || 30;
+  const sel = $('setWfSecs');
+  if (['15','30','60'].includes(String(secs))){ sel.value = String(secs); $('setWfCustom').disabled = true; $('setWfCustom').value = ''; }
+  else { sel.value = 'custom'; $('setWfCustom').disabled = false; $('setWfCustom').value = secs; }
+  renderMsgEditor((s.messages || []).slice());
+  $('dlgSettings').showModal();
+}
+function renderMsgEditor(list){
+  const box = $('msgList');
+  box.innerHTML = '';
+  list.forEach((m, i) => box.appendChild(msgRow(m.label, m.text)));
+}
+function msgRow(label, text){
+  const row = document.createElement('div');
+  row.className = 'msg-edit';
+  const l = document.createElement('input');
+  l.type = 'text'; l.value = label || ''; l.placeholder = '标签';
+  const t = document.createElement('input');
+  t.type = 'text'; t.value = text || ''; t.placeholder = '报文';
+  const d = document.createElement('button');
+  d.type = 'button'; d.className = 'del'; d.textContent = '×';
+  d.onclick = () => row.remove();
+  row.append(l, t, d);
+  return row;
+}
+function collectMessages(){
+  return [...$('msgList').children].map(r => {
+    const [l, t] = r.querySelectorAll('input');
+    return {label: l.value.trim(), text: t.value.trim()};
+  }).filter(m => m.label || m.text);
+}
+
+/* ---------------- 通联日志 ---------------- */
+async function loadQso(){
+  try{
+    const j = await (await api('/api/qso')).json();
+    renderQso(j.qso || []);
+  }catch(e){ log('读通联日志失败：' + e.message); }
+}
+function renderQso(list){
+  const body = $('qsoBody');
+  body.innerHTML = '';
+  $('qsoCount').textContent = `${list.length} 条`;
+  list.forEach((q, i) => {
+    const tr = document.createElement('tr');
+    const rst = [q.rst_sent, q.rst_rcvd].filter(Boolean).join('/');
+    const cells = [
+      ['call', q.call], ['grid', q.grid], ['freq', q.freq], ['date', q.date], ['time', q.time],
+      ['qth', q.qth], ['rst_rcvd', rst], ['mode', q.mode], ['note', q.note],
+    ];
+    for (const [key, val] of cells){
+      const td = document.createElement('td');
+      const inp = document.createElement('input');
+      inp.type = 'text'; inp.value = val || '';
+      inp.onchange = async () => {
+        await fetch(`/api/qso?action=update&idx=${i}&${key}=` + encodeURIComponent(inp.value), {method:'POST'});
+        log(`修改通联 #${i+1} ${key}=${inp.value}`);
+      };
+      td.appendChild(inp);
+      tr.appendChild(td);
+    }
+    const td = document.createElement('td');
+    const del = document.createElement('button');
+    del.className = 'del'; del.textContent = '×'; del.title = '删除';
+    del.onclick = async () => {
+      await fetch(`/api/qso?action=delete&idx=${i}`, {method:'POST'});
+      loadQso(); log('删除通联 #' + (i+1));
+    };
+    td.appendChild(del);
+    tr.appendChild(td);
+    body.appendChild(tr);
+  });
+}
+
+/* ---------------- 发信 ---------------- */
+/* 字库是 GB2312（7445 字），没有半角 ASCII：发报文前把 0x21–0x7E 转成全角，
+   这样 "CQ CQ DE BH4XYZ" 也能上天——人眼读得出来，呼号本来就走机读层。 */
+function toFull(s){
+  return String(s)
+    .replace(/[\x21-\x7E]/g, c => String.fromCharCode(c.charCodeAt(0) + 0xFEE0))
+    .replace(/ /g, '\u3000');
+}
+
+function modeInfo(name){ return ((S.info && S.info.modes) || []).find(m => m.name === name) || null; }
+function buildModes(){
+  const seg = $('modeSeg');
+  const modes = (S.info && S.info.modes) || [{name:'M2'}];
+  seg.innerHTML = modes.map(m => `<button data-mode="${m.name}" class="${m.name===S.mode?'on':''}">${m.name}</button>`).join('');
+  seg.dataset.built = '1';
+  seg.onclick = e => {
+    const b = e.target.closest('button'); if (!b) return;
+    S.mode = b.dataset.mode;
+    [...seg.children].forEach(x => x.classList.toggle('on', x.dataset.mode === S.mode));
+    saveSettings({mode: S.mode});
+  };
+}
+function updateTxInfo(){ updateGlyphs(); }
+let glyphTimer = null;
+function updateGlyphs(){
+  clearTimeout(glyphTimer);
+  glyphTimer = setTimeout(async () => {
+    const raw = $('txText').value;
+    const txt = toFull(raw);
+    if (!txt){ $('txGlyphs').innerHTML = ''; return; }
+    try{
+      const j = await (await api('/api/glyphs?text=' + encodeURIComponent(txt))).json();
+      const box = $('txGlyphs');
+      box.innerHTML = '';
+      for (const g of j.glyphs){
+        const cv = document.createElement('canvas');
+        cv.width = j.n; cv.height = j.n;
+        const c2 = cv.getContext('2d');
+        c2.fillStyle = '#08101a'; c2.fillRect(0,0,j.n,j.n);
+        c2.fillStyle = '#7ee2e8';
+        g.rows.forEach((row, y) => { for (let x=0;x<row.length;x++) if (row[x]==='1') c2.fillRect(x,y,1,1); });
+        cv.title = g.ch;
+        box.appendChild(cv);
+      }
+      if (j.missing && S.set && S.set.debug){
+        const m = document.createElement('span');
+        m.className = 'miss'; m.textContent = '缺字';
+        m.title = '不在字库里：' + j.missing;
+        box.appendChild(m);
+      }
+    }catch(e){}
+  }, 200);
+}
+async function startTx(){
+  const text = toFull($('txText').value.trim());
+  if (!text){ toast('报文是空的', 'warn'); return; }
+  try{
+    const q = new URLSearchParams({text, mode: S.mode});
+    const j = await (await api('/api/tx?' + q, {method:'POST'})).json();
+    log('发射：' + j.msg);
+    toast(j.msg);
+    pollTx();
+  }catch(e){ toast(e.message, 'err'); }
+}
+function pollTx(){
+  clearInterval(S.txTimer);
+  const tick = async () => {
+    try{
+      const t = await (await api('/api/tx/status')).json();
+      S.txStart = t.start_ms; S.txTotal = t.seconds;
+      const dot = $('dot');
+      if (t.state === 'waiting'){
+        const left = Math.max(0, (t.start_ms - t.now_ms) / 1000);
+        $('txState').innerHTML = `等待整十秒 · <b>${left.toFixed(1)} s</b> 后发射（时长 ${t.seconds.toFixed(1)} s）`;
+        $('btnTx').textContent = '取消发射';
+        $('btnTx').classList.add('stop'); $('btnTx').classList.remove('primary');
+        dot.className = 'dot wait';
+        $('stateText').textContent = '等待发射';
+      } else if (t.state === 'playing'){
+        const done = clamp((t.now_ms - t.start_ms) / 1000, 0, t.seconds);
+        $('txState').innerHTML = `发射中 · <b>${done.toFixed(1)} / ${t.seconds.toFixed(1)} s</b> · 点按钮可中断`;
+        // 电台若在中途掉 PTT，服务端会重发；把次数挂在提示里，排障时一眼看到
+        if (t.reassert > 0) $('stateText').title = `发射期间已重发 PTT ${t.reassert} 次`;
+        else $('stateText').title = '';
+        $('btnTx').textContent = '中断发射';
+        $('btnTx').disabled = false;
+        $('btnTx').classList.add('stop'); $('btnTx').classList.remove('primary');
+        dot.className = 'dot tx';
+        $('stateText').textContent = '发射中';
+      } else {
+        $('txState').textContent = t.msg || '—';
+        $('btnTx').textContent = '发射';
+        $('btnTx').disabled = false;
+        $('btnTx').classList.remove('stop'); $('btnTx').classList.add('primary');
+        clearInterval(S.txTimer); S.txTimer = null;
+        const st = await refreshStatus();
+        if (st) {}
+      }
+    }catch(e){}
+  };
+  tick();
+  S.txTimer = setInterval(tick, 200);
+}
+async function generateWav(){
+  const text = toFull($('txText').value.trim());
+  if (!text){ toast('报文是空的', 'warn'); return; }
+  try{
+    const q = new URLSearchParams({text, mode: S.mode, sync: $('txSync').checked ? '1' : '0'});
+    const j = await (await api('/api/save-wav?' + q, {method:'POST'})).json();
+    toast('已保存：' + j.path);
+    log('生成 WAV ' + j.path);
+  }catch(e){ toast('生成失败：' + e.message, 'err'); }
+}
+async function selfTest(){
+  const text = toFull($('txText').value.trim());
+  try{
+    const q = new URLSearchParams({text, mode: S.mode, sync: $('txSync').checked ? '1' : '0'});
+    const blob = await (await api('/api/encode?' + q)).blob();
+    wfReset();
+    const r = await api('/api/decode?name=自检.wav', {method:'POST', body: blob});
+    const j = await r.json();
+    openStream();
+    log('自检：' + j.msg);
+    toast('发→收自检开始');
+  }catch(e){ toast('自检失败：' + e.message, 'err'); }
+}
+
+/* ---------------- 采集开关 ---------------- */
+let busy = false;
+async function toggleLive(){
+  if (busy) return;
+  busy = true;
+  try{
+    if (S.kind !== 'idle'){
+      const j = await (await api('/api/audio?action=stop', {method:'POST'})).json();
+      log('停止接收：' + j.msg);
+      closeStream();
+      await refreshStatus();
+      return;
+    }
+    const dev = (S.set && S.set.device) || '';
+    const q = new URLSearchParams({action:'start', device: dev || '@default', loopback: (S.set && S.set.loopback) ? '1' : '0'});
+    const j = await (await api('/api/audio?' + q, {method:'POST'})).json();
+    log('开始接收：' + j.msg);
+    if (!/^开始/.test(j.msg)){ toast(j.msg, 'err'); await refreshStatus(); return; }
+    wfReset();
+    openStream();
+    await refreshStatus();
+    toast(j.msg);
+  }catch(e){ toast(e.message, 'err'); log('错误：' + e.message); }
+  finally { busy = false; }
+}
+
+/* ---------------- 回放 ---------------- */
+async function replay(file){
+  if (!file) return;
+  if (!/\.wav$/i.test(file.name)){ toast('只支持 WAV', 'warn'); return; }
+  try{
+    wfReset();
+    const buf = await file.arrayBuffer();
+    const r = await api('/api/decode?name=' + encodeURIComponent(file.name), {method:'POST', body:buf});
+    const j = await r.json();
+    log(`回放 ${file.name}（${j.seconds.toFixed(1)} s）`);
+    openStream();
+    await refreshStatus();
+    toast(`回放 ${file.name}`);
+  }catch(e){ toast('回放失败：' + e.message, 'err'); }
+}
+
+/* ---------------- 电台（CAT） ---------------- */
+let rigListsLoaded = false;
+let rigTimer = null;
+let rigPttOn = false;
+
+function rigFillModels(list){
+  const sel = $('rigModel');
+  const byMfg = new Map();
+  for (const m of list){
+    if (!byMfg.has(m.mfg)) byMfg.set(m.mfg, []);
+    byMfg.get(m.mfg).push(m);
+  }
+  const groups = [...byMfg.keys()].sort();
+  sel.innerHTML = groups.map(g => {
+    const opts = byMfg.get(g).sort((a, b) => a.name.localeCompare(b.name))
+      .map(m => `<option value="${m.model}">${esc(m.name)} (${m.model})</option>`).join('');
+    return `<optgroup label="${esc(g)}">${opts}</optgroup>`;
+  }).join('');
+}
+
+function rigFillPorts(list, current){
+  const sel = $('rigPort');
+  const items = list.slice();
+  if (current && !items.includes(current)) items.unshift(current);
+  if (!items.length){ sel.innerHTML = '<option value="">（没找到串口）</option>'; return; }
+  sel.innerHTML = items.map(p => `<option value="${esc(p)}"${p === current ? ' selected' : ''}>${esc(p)}</option>`).join('');
+}
+
+async function refreshRig(force){
+  try{
+    const j = await (await api('/api/rig' + (rigListsLoaded ? '' : '?lists=1'))).json();
+    if (j.models && !rigListsLoaded){
+      rigFillModels(j.models);
+      rigListsLoaded = true;
+    }
+    if (j.ports) rigFillPorts(j.ports, j.port);
+    $('rigModel').value = String(j.model);
+    $('rigBaud').value = String(j.baud);
+    $('rigEnabled').checked = !!j.enabled;
+    $('rigLead').value = j.lead_ms;
+    $('rigTail').value = j.tail_ms;
+    $('rigFreq').value = j.freq_hz > 0 ? String(Math.round(j.freq_hz)) : '—';
+    $('rigMsg').textContent = j.msg || (j.available ? '未连接' : '缺少 libhamlib-4.dll');
+    $('rigPttBtn').textContent = j.ptt ? '松开 PTT' : '按一下 PTT';
+    $('rigPttBtn').classList.toggle('stop', !!j.ptt);
+    rigPttOn = !!j.ptt;
+    if (force) return j;
+  }catch(e){ $('rigMsg').textContent = '读电台状态失败：' + e.message; }
+}
+function rigSave(){
+  const q = new URLSearchParams({
+    rig_enabled: $('rigEnabled').checked ? '1' : '0',
+    rig_model: $('rigModel').value || '0',
+    rig_port: $('rigPort').value || '',
+    rig_baud: $('rigBaud').value,
+    rig_lead_ms: $('rigLead').value || '0',
+    rig_tail_ms: $('rigTail').value || '0',
+  });
+  return api('/api/rig?' + q, {method:'POST'}).then(r => r.json()).then(j => {
+    log('电台：' + j.msg);
+    toast(j.msg);
+    return refreshRig(true);
+  }).catch(e => toast('电台设置失败：' + e.message, 'err'));
+}
+$('rigModel').onchange = rigSave;
+$('rigPort').onchange = rigSave;
+$('rigBaud').onchange = rigSave;
+$('rigLead').onchange = rigSave;
+$('rigTail').onchange = rigSave;
+$('rigEnabled').onchange = rigSave;
+$('rigRead').onclick = async () => {
+  try{
+    const j = await (await api('/api/rig/read', {method:'POST'})).json();
+    $('rigFreq').value = String(Math.round(j.freq_hz));
+    $('freqIn').value = j.freq_khz;              // 顶栏那个频率框跟着走
+    if (S.set) S.set.freq_khz = j.freq_khz;
+    toast(`电台 ${ (j.freq_hz/1e6).toFixed(3) } MHz`);
+    log('读电台频率 ' + j.freq_hz + ' Hz');
+  }catch(e){ toast('读频率失败：' + e.message, 'err'); }
+};
+$('rigTest').onclick = async () => {
+  try{
+    const j = await (await api('/api/rig/test', {method:'POST'})).json();
+    $('rigMsg').textContent = j.msg;
+    toast(j.ok ? 'CAT 连接正常' : 'CAT 测试未通过', j.ok ? '' : 'err');
+    log('CAT 自检：' + j.msg);
+    refreshRig(true);
+  }catch(e){ toast('测试失败：' + e.message, 'err'); }
+};
+$('rigPttBtn').onclick = async () => {
+  const on = !rigPttOn;
+  try{
+    await api('/api/rig/ptt?on=' + (on ? '1' : '0'), {method:'POST'});
+    rigPttOn = on;
+    $('rigPttBtn').textContent = on ? '松开 PTT' : '按一下 PTT';
+    $('rigPttBtn').classList.toggle('stop', on);
+    // 手动 PTT 兜底：30 秒后自动松开，避免忘了
+    if (on){
+      clearTimeout(window.__pttWatch);
+      window.__pttWatch = setTimeout(async () => {
+        await fetch('/api/rig/ptt?on=0', {method:'POST'}).catch(() => {});
+        rigPttOn = false;
+        $('rigPttBtn').textContent = '按一下 PTT';
+        $('rigPttBtn').classList.remove('stop');
+        toast('手动 PTT 已超时自动松开', 'warn');
+      }, 30000);
+    }
+  }catch(e){ toast('PTT 失败：' + e.message, 'err'); }
+};
+
+/* ---------------- 事件绑定 ---------------- */
+$('btnRawWin').onclick = async () => {
+  try{
+    await api('/api/window?page=raw', {method:'POST'});
+    toast('已打开原始瀑布图窗口');
+  }catch(e){ toast('打不开新窗口：' + e.message, 'err'); }
+};
+$('btnLog').onclick = () => openLogDialog();
+$('logCancel').onclick = e => { e.preventDefault(); $('dlgLog').close(); };
+$('logSave').onclick = async e => {
+  e.preventDefault();
+  if (await submitLogEntry()) $('dlgLog').close();
+};
+$('liveBtn').onclick = toggleLive;
+$('snapBtn').onclick = saveWaterfall;
+$('rawFps').onchange = async e => {
+  const fps = +e.target.value;
+  try{ await api('/api/raw/rate?fps=' + fps, {method: 'POST'}); }
+  catch(err){ toast('设置行率失败：' + err.message, 'err'); }
+};
+$('rawCenter').oninput = () => rawApplyRange();
+$('rawSpan').oninput = () => rawApplyRange();
+$('rawGain').oninput = e => { RAWD.gain = +e.target.value; drawRaw(true); };
+$('rawClear').onclick = () => {
+  RAWD.back = null; RAWD.frames = 0; RAWD.lastT = 0; RAWD.hist = [];
+  drawRaw(true);
+};
+$('rawSnap').onclick = () => saveRawPng();
+$('rawCanvas').addEventListener('mousemove', e => {
+  // 注意：这里**绝不能**调 getImageData——在 50 帧/秒滚动的画布上，
+  // 每次鼠标移动触发一次 GPU 回读会把界面卡死。读数一律走 RAWD.hist（帧缓冲）。
+  const c = $('rawCanvas');
+  const r = c.getBoundingClientRect();
+  const dpr = RAWD.dpr || 1;
+  const padL = 40 * dpr, padR = 46 * dpr, padB = 20 * dpr;
+  const plotW = Math.max(1, c.width - padL - padR);
+  const plotH = Math.max(1, c.height - padB);
+  const x = (e.clientX - r.left) * dpr, y = (e.clientY - r.top) * dpr;
+  if (x < padL || x > padL + plotW || y < 0 || y > plotH) return;
+
+  const f = RAWD.lo + (RAWD.hi - RAWD.lo) * ((x - padL) / plotW);
+  const rate = (RAWD.rate || 50) / Math.max(1, RAWD.lineH);
+  const ago = (plotH - y) / rate;
+
+  let db = null;
+  const hist = RAWD.hist;
+  if (hist.length){
+    const rowFromBottom = Math.floor((plotH - y) / Math.max(1, RAWD.lineH));
+    const idx = hist.length - 1 - rowFromBottom;
+    if (idx >= 0 && idx < hist.length){
+      const row = hist[idx];
+      let bi = Math.round(f / 4000 * row.length);
+      bi = Math.max(0, Math.min(row.length - 1, bi));
+      db = -100 + row[bi] / 255 * 100;
+    }
+  }
+  $('rawReadout').textContent =
+    `${f.toFixed(0)} Hz` + (db === null ? '' : ` · ${db.toFixed(0)} dBFS`) +
+    ` · ${ago < 1 ? '<1' : ago.toFixed(1)} s 前`;
+});
+$('btnTx').onclick = () => {
+  if (S.txTimer){ fetch('/api/tx/stop', {method:'POST'}); }
+  else startTx();
+};
+$('btnMake').onclick = generateWav;
+$('btnSelf').onclick = selfTest;
+$('zoomR').oninput = e => { S.rowH = +e.target.value; syncStripWidth(); drawWF(); };
+$('gainR').oninput = e => { S.gain = +e.target.value; drawWF(); drawArchive(true); };
+$('lutSeg').onclick = e => {
+  const b = e.target.closest('button'); if (!b) return;
+  S.lut = b.dataset.lut;
+  [...$('lutSeg').children].forEach(x => x.classList.toggle('on', x === b));
+  drawWF(); drawArchive(true);
+};
+$('txText').oninput = updateTxInfo;
+$('freqIn').onchange = async () => {
+  const v = Math.max(0, Math.round(+$('freqIn').value || 0));
+  $('freqIn').value = v;
+  try{
+    // 服务端在保存设置时顺带把这个频率下发给电台（连了的话）
+    await saveSettings({freq_khz: String(v)});
+    log('频率设为 ' + v + ' kHz');
+    toast('频率 ' + v + ' kHz 已保存' + (S.set && S.set.rig_enabled ? '，并下发到电台' : ''));
+    if (S.set && S.set.rig_enabled) refreshRig(false);
+  }
+  catch(e){ toast('频率没存上：' + e.message, 'err'); }
+};
+
+/* 顶栏三个入口：按 data-dlg 绑，别按以前的 .menu 结构（改版后那个 class 没了，
+   之前绑不上去就是"点了没反应"） */
+document.querySelectorAll('[data-dlg]').forEach(b => b.onclick = () => {
+  const which = b.dataset.dlg;
+  if (which === 'settings') openSettings();
+  if (which === 'qso'){ loadQso(); $('dlgQso').showModal(); }
+  if (which === 'debug'){ $('debugLog').textContent = LOG.join('\n') || '（还没有日志）'; $('dlgDebug').showModal(); }
+});
+
+/* 设置对话框 */
+$('setCancel').onclick = () => $('dlgSettings').close();
+$('quitBtn').onclick = async () => {
+  await fetch('/api/quit', {method:'POST'}).catch(() => {});
+  $('dlgSettings').close();
+  document.body.insertAdjacentHTML('beforeend',
+    '<div style="position:fixed;inset:0;display:grid;place-items:center;background:var(--bg);z-index:99;' +
+    'color:var(--ink-3);font-size:13px">已退出，可以关掉这个窗口了。</div>');
+};
+$('setWfSecs').onchange = () => { $('setWfCustom').disabled = $('setWfSecs').value !== 'custom'; };
+$('msgAdd').onclick = () => $('msgList').appendChild(msgRow('', ''));
+$('msgReset').onclick = () => {
+  const call = $('setCall').value.trim() || 'N0CALL';
+  const grid = $('setGrid').value.trim() || '----';
+  renderMsgEditor([
+    {label:'CQ', text:`CQ CQ CQ DE ${call} ${call} PSE K`},
+    {label:'呼号', text:`DE ${call}`},
+    {label:'网格', text:`QTH ${grid}`},
+    {label:'TEST', text:`TEST DE ${call}`},
+    {label:'73', text:`73 DE ${call} SK`},
+  ]);
+};
+$('btnOpenDir').onclick = async () => { await fetch('/api/open-dir', {method:'POST'}); };
+$('setSave').onclick = async () => {
+  const msgs = collectMessages();
+  const packed = msgs.map(m => `${m.label.replace(/[;~]/g,' ')}~${m.text.replace(/[;~]/g,' ')}`).join(';');
+  let secs = $('setWfSecs').value;
+  secs = secs === 'custom' ? (+$('setWfCustom').value || 30) : +secs;
+  const fields = {
+    call: $('setCall').value.trim(),
+    grid: $('setGrid').value.trim().toUpperCase(),
+    device: $('setInDev').value,
+    out_device: $('setOutDev').value,
+    loopback: $('setLoop').checked ? '1' : '0',
+    out_dir: $('setOutDir').value.trim(),
+    waterfall_secs: String(secs),
+    tx_offset_ms: String(+$('setTxOffset').value || 0),
+    archive_blocks: $('setArchive').value,
+    debug: $('setDebug').checked ? '1' : '0',
+    messages: packed,
+  };
+  try{
+    const s = await saveSettings(fields);
+    S.device = s.device;
+    log('设置已保存');
+    toast('设置已保存');
+    $('dlgSettings').close();
+    loadDevices();
+  }catch(e){ toast('保存失败：' + e.message, 'err'); }
+};
+
+/* 通联日志 */
+$('qsoClose').onclick = () => $('dlgQso').close();
+$('qsoAdd').onclick = async () => {
+  const now = new Date();
+  const p = n => String(n).padStart(2, '0');
+  const date = `${now.getUTCFullYear()}${p(now.getUTCMonth()+1)}${p(now.getUTCDate())}`;
+  const time = `${p(now.getUTCHours())}${p(now.getUTCMinutes())}`;
+  const freq = S.set && S.set.freq_khz ? (S.set.freq_khz / 1000).toFixed(3) : '';
+  const q = new URLSearchParams({action:'add', call:'', grid:'', freq, date, time, mode: S.mode, note:'手动'});
+  await fetch('/api/qso?' + q, {method:'POST'});
+  loadQso();
+};
+$('qsoOpenDir').onclick = async () => { await fetch('/api/open-dir', {method:'POST'}); };
+$('qsoExport').onclick = async () => {
+  try{
+    const j = await (await api('/api/qso/export', {method:'POST'})).json();
+    toast(`已导出 ${j.count} 条：` + j.path);
+    log('导出 ADIF ' + j.path);
+  }catch(e){ toast('导出失败：' + e.message, 'err'); }
+};
+
+/* DEBUG 日志 */
+$('dbgRows').onclick = async () => {
+  try{
+    const [rr, sr] = await Promise.all([api('/api/debug/rows'), api('/api/status')]);
+    const rows = await rr.json();
+    const st = await sr.json();
+    const pack = {
+      时间: new Date().toISOString(),
+      行数据: rows,
+      状态: st,
+      本机: { ua: navigator.userAgent, dpr: devicePixelRatio },
+    };
+    const blob = new Blob([JSON.stringify(pack, null, 1)], {type: 'application/json'});
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = 'cp16plus-诊断-' + new Date().toISOString().slice(0, 19).replace(/[:T]/g, '') + '.json';
+    a.click();
+    URL.revokeObjectURL(a.href);
+    toast('诊断包已导出');
+  }catch(e){ toast('导出失败：' + e.message, 'err'); }
+};
+$('dbgClose').onclick = () => $('dlgDebug').close();
+$('dbgClear').onclick = () => { LOG.length = 0; $('debugLog').textContent = '（已清空）'; };
+$('dbgExport').onclick = async () => {
+  const text = LOG.join('\n') + `\n\n--- 环境 ---\nUA ${navigator.userAgent}\n`;
+  try{
+    const j = await (await api('/api/save-log', {method:'POST', body: text})).json();
+    toast('日志已导出：' + j.path);
+  }catch(e){ toast('导出失败：' + e.message, 'err'); }
+};
+
+/* 拖拽回放 */
+const mask = $('dragmask');
+let dragDepth = 0;
+window.addEventListener('dragenter', e => { e.preventDefault(); dragDepth++; mask.classList.add('on'); });
+window.addEventListener('dragover', e => e.preventDefault());
+window.addEventListener('dragleave', () => { dragDepth = Math.max(0, dragDepth-1); if (!dragDepth) mask.classList.remove('on'); });
+window.addEventListener('drop', e => {
+  e.preventDefault(); dragDepth = 0; mask.classList.remove('on');
+  const f = e.dataTransfer.files && e.dataTransfer.files[0];
+  if (f) replay(f);
+});
+
+/* 快捷键 */
+window.addEventListener('keydown', e => {
+  const typing = /input|textarea|select/i.test(e.target.tagName);
+  if (typing) return;
+  if (e.code === 'Space'){ e.preventDefault(); toggleLive(); }
+  else if (e.key === 's' || e.key === 'S'){ saveWaterfall(); }
+  else if (e.key === 't' || e.key === 'T'){ setTheme(document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark'); }
+});
+
+/* 尺寸变化 */
+if (window.ResizeObserver){
+  const ro = new ResizeObserver(() => { wfSize(); drawWF(); drawArchive(true); drawRaw(true); });
+  ro.observe($('wf')); ro.observe($('ar'));
+}
+window.addEventListener('resize', () => { wfSize(); drawWF(); drawArchive(true); });
+
+/* 深链：#qso / #settings / #debug / #dark / #static */
+function applyHash(){
+  const parts = location.hash.slice(1).toLowerCase().split(/[-&,]/);
+  if (parts.includes('dark')) setTheme('dark');
+  if (parts.includes('selftest')) setTimeout(runSelfTest, 600);
+  if (parts.includes('raw')){
+    // 独立窗口模式：隐藏页签与频率框，整页只留原始瀑布
+    document.body.classList.add('solo');
+    $('pageTabs').style.display = 'none';
+    $('btnRawWin').style.display = 'none';
+    const fq = document.querySelector('.freq');
+    if (fq) fq.style.display = 'none';
+    switchPage('raw');
+    rawApplyRange();
+    // 告诉引擎"有人在看原始瀑布"，它才开始算频谱（不看不算，零开销）
+    fetch('/api/raw/watch?on=1', {method:'POST'}).catch(() => {});
+    window.addEventListener('beforeunload', () => {
+      try{ navigator.sendBeacon('/api/raw/watch?on=0'); }catch(e){}
+    });
+    if (parts.includes('once')) S.rawOnce = true;   // 诊断：收满 30 帧自动断开
+    if (!parts.includes('static')) openStream();
+  }
+  else if (parts.includes('rig')) switchPage('rig');
+  if (parts.includes('log')) setTimeout(openLogDialog, 320);
+  if (parts.includes('settings')) openSettings();
+  if (parts.includes('qso')){ loadQso(); $('dlgQso').showModal(); }
+  if (parts.includes('debug')){ $('debugLog').textContent = LOG.join('\n'); $('dlgDebug').showModal(); }
+}
+
+/* ---------------- 自检（#selftest） ----------------
+   为什么要有：装完之后"点按钮没反应"这种问题，肉眼看不出来，
+   但只要脚本有一句语法错误，整页的 bind 都不会执行。
+   这个钩子用真实的 .click() 走一遍主要交互，把结果写进 body[data-selftest]，
+   无头浏览器 dump-dom 就能读到——比截图靠谱。 */
+async function runSelfTest(){
+  const out = [];
+  const step = async (name, fn) => {
+    try{ await fn(); out.push(name + ':ok'); }
+    catch(e){ out.push(name + ':ERR(' + e.message + ')'); }
+  };
+  await step('tabs', async () => {
+    switchPage('raw');
+    if (!$('page-raw').classList.contains('on')) throw new Error('raw 页没打开');
+    switchPage('rig');
+    if (!$('page-rig').classList.contains('on')) throw new Error('rig 页没打开');
+    switchPage('main');
+    if (!$('page-main').classList.contains('on')) throw new Error('main 页没回来');
+  });
+  await step('settings', async () => {
+    document.querySelector('[data-dlg="settings"]').click();
+    if (!$('dlgSettings').open) throw new Error('设置对话框没打开');
+    $('setCancel').click();
+    if ($('dlgSettings').open) throw new Error('设置对话框没关掉');
+  });
+  await step('qso', async () => {
+    document.querySelector('[data-dlg="qso"]').click();
+    if (!$('dlgQso').open) throw new Error('通联日志没打开');
+    const before = $('qsoBody').children.length;
+    $('qsoAdd').click();
+    for (let i = 0; i < 20 && $('qsoBody').children.length <= before; i++){
+      await new Promise(r => setTimeout(r, 100));
+    }
+    if (!$('qsoBody').children.length) throw new Error('新增通联没生效');
+    $('qsoClose').click();
+  });
+  await step('freq', async () => {
+    $('freqIn').value = '14074';
+    await $('freqIn').onchange();
+    if (String($('freqIn').value) !== '14074') throw new Error('频率没写回');
+  });
+  await step('rawRoute', async () => {
+    const n = 16;
+    let bin = '';
+    for (let i = 0; i < n; i++) bin += String.fromCharCode(100 + i);
+    switchPage('raw');
+    const before = RAWD.frames;
+    // 走真实的事件入口，而不是直接调 rawPush
+    handleEvent({id: 9e15, kind: 'raw', db: btoa(bin), n, t: 2.5, lvl: -50, peak: -20});
+    if (RAWD.frames !== before + 1) throw new Error('handleEvent 没把 raw 事件送到 rawPush');
+    handleEvent({id: 9e15, kind: 'raw', db: btoa(bin), n, t: 2.6, lvl: -50, peak: -20});
+    if (RAWD.frames !== before + 1) throw new Error('重复 id 应被去重');
+    switchPage('main');
+  });
+  await step('rawPush', async () => {
+    // 造一条 raw 事件（512 bin，32 字节基码），走真实的 atob → 环形缓冲 → 绘制
+    const n = 512;
+    const arr = new Uint8Array(n);
+    for (let i = 0; i < n; i++) arr[i] = (i * 7 + 40) & 255;
+    let bin = '';
+    for (let i = 0; i < n; i++) bin += String.fromCharCode(arr[i]);
+    switchPage('raw');
+    const before = RAWD.frames;
+    rawPush({db: btoa(bin), n, t: 1.0, lvl: -40, peak: -12});
+    if (RAWD.frames !== before + 1) throw new Error('rawPush 没进缓冲');
+    const last = RAWD.hist[RAWD.hist.length - 1];
+    if (!last || last.length !== n) throw new Error('bin 长度不对');
+    drawRaw(true);
+  });
+  await step('peakAnchor', async () => {
+    // 回归：采集启动时的一下爆音不能把峰值带偏，否则后面真正有字的行全黑。
+    wfReset();
+    wfPush([Array(16).fill(1.0)]);                       // 爆音
+    for (let i = 0; i < 40; i++){
+      wfPush([Array.from({ length: 16 }, (_, k) => (((i + k) % 4 === 0) ? 0.02 : 0.001))]);
+    }
+    const last = RING[RING.length - 1];
+    let mx = 0;
+    for (let i = 0; i < last.length; i += 4) if (last[i] > mx) mx = last[i];
+    if (mx < 40) throw new Error('峰值被爆音带偏，正常行仍是黑的（亮度 ' + mx + '）');
+  });
+
+  await step('rawHover', async () => {
+    // 回归用：鼠标在瀑布上移动曾经因为 getImageData 卡死。
+    // 这里真发 60 个 mousemove，确认读数会更新、且不抛异常。
+    switchPage('raw');
+    if (!RAWD.frames){
+      // 没有数据时先塞一帧，保证坐标轴与读数逻辑被真正执行
+      const n0 = 512;
+      let bin0 = '';
+      for (let i = 0; i < n0; i++) bin0 += String.fromCharCode((i * 5 + 60) & 255);
+      rawPush({db: btoa(bin0), n: n0, t: 1.0, lvl: -40, peak: -12});
+    }
+    const c = $('rawCanvas');
+    const r = c.getBoundingClientRect();
+    for (let i = 0; i < 60; i++){
+      c.dispatchEvent(new MouseEvent('mousemove', {
+        clientX: r.left + 80 + i * 3,
+        clientY: r.top + 40 + (i % 20) * 8,
+        bubbles: true,
+      }));
+    }
+    const txt = $('rawReadout').textContent || '';
+    if (!txt.includes('Hz')) throw new Error('悬停没更新读数：' + txt);
+    if (txt.includes('undefined')) throw new Error('读数里有 undefined');
+    switchPage('main');
+  });
+  await step('rawParams', async () => {
+    switchPage('raw');
+    for (const [id, v] of [['rawGain', '30']]){
+      const el = $(id);
+      el.value = v;
+      el.dispatchEvent(new Event('input'));
+    }
+    $('rawCenter').value = '1000';
+    $('rawSpan').value = '800';
+    rawApplyRange();
+    switchPage('main');
+  });
+  document.body.dataset.selftest = out.join(' | ');
+  log('自检：' + document.body.dataset.selftest);
+}
+
+/* ---------------- 启动 ---------------- */
+async function markDiagBuild(){
+  try{
+    const p = await (await api('/api/ping')).json();
+    if (p && p.diag){
+      const v = document.querySelector('.ver');
+      if (v) v.textContent = 'β0.1.2 · 诊断版';
+      document.title = 'CP16+ 频谱书写（诊断版）';
+      document.body.dataset.diag = '1';
+    }
+  }catch(e){}
+}
+
+async function boot(){
+  buildAxis();
+  try{ S.info = await (await api('/api/info')).json(); buildModes(); }catch(e){ log('读协议信息失败：' + e.message); }
+  try{ await loadSettings(); }catch(e){ log('读设置失败：' + e.message); }
+  updateGlyphs();
+  await loadDevices();
+  try{
+    const h = await (await api('/api/history')).json();
+    if (h.events && h.events.length){ for (const d of h.events) handleEvent(d, true); hideEmpty(); }
+  }catch(e){}
+  await refreshStatus();
+  if (!STATIC){ openStream(); pollTx(); }
+  markDiagBuild();
+  setInterval(() => { refreshStatus(); }, 1500);
+  syncStripWidth();
+  wfSize(); drawWF(); drawArchive(true);
+  if (S.totalRows) hideEmpty();
+  applyHash();
+  log('界面就绪');
+  document.body.dataset.ready = '1';
+}
+
+boot();
+window.addEventListener('error', e => { document.body.dataset.error = String(e.message) + ' @L' + e.lineno; });
+</script>
+</body>
+</html>
